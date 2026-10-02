@@ -1,0 +1,577 @@
+[
+  {
+    "path": "claude/build_cut87_spec (1).py",
+    "bytes": 6247,
+    "sha256": "52af7530670a90906ed74a562ce5ff971cc28b993f775bd49dc3d064b29fa41b",
+    "functions": [
+      "claw_drift",
+      "F",
+      "speed",
+      "wrap"
+    ],
+    "imports": [
+      "import json, math",
+      "from scatter_exit import scatter_exit"
+    ]
+  },
+  {
+    "path": "claude/build_dario_zoomout.py",
+    "bytes": 5073,
+    "sha256": "017e5c2b74e0adce5a4f2004144ad5ac8f385a1447b4e420e6a2ccb30c7adbc8",
+    "functions": [
+      "load",
+      "snap",
+      "world",
+      "camera",
+      "flat",
+      "ease_out",
+      "push"
+    ],
+    "imports": [
+      "from PIL import Image",
+      "import numpy as np",
+      "import unicodedata, os",
+      "from pathlib import Path"
+    ]
+  },
+  {
+    "path": "claude/build_hand_turn_final (1).py",
+    "bytes": 4689,
+    "sha256": "a82b7e847da070b150e297e078ecfc0d8a736c0a047d0f6465cd185db62a53c5",
+    "functions": [
+      "F",
+      "turn",
+      "pose_back",
+      "pose_side"
+    ],
+    "imports": [
+      "import json, math"
+    ]
+  },
+  {
+    "path": "claude/build_jensen_glint.py",
+    "bytes": 4878,
+    "sha256": "0823738b0e5ead8901eae9e4aafbc047661f16cc0069e8c17f12081b032d4383",
+    "functions": [
+      "on_white",
+      "ease_in_out",
+      "frame"
+    ],
+    "imports": [
+      "from PIL import Image, ImageChops, ImageFilter",
+      "import numpy as np",
+      "from pathlib import Path"
+    ]
+  },
+  {
+    "path": "claude/build_pant_spec_v3.py",
+    "bytes": 2645,
+    "sha256": "f47fd07dbc06d0370eb37e0d3608721253342a5f9fc8053ea5afd35870648d6b",
+    "functions": [
+      "character_layers"
+    ],
+    "imports": [
+      "import json"
+    ]
+  },
+  {
+    "path": "claude/build_pant_steam_v3.py",
+    "bytes": 6668,
+    "sha256": "e2fca64df1150b9b4212964b743959f10e7fdae5fd377021d4a745c3d401bea0",
+    "functions": [
+      "load",
+      "panel_mask",
+      "line_only",
+      "place",
+      "steam_state",
+      "draw_steam",
+      "character",
+      "main"
+    ],
+    "imports": [
+      "import math",
+      "import random",
+      "import sys",
+      "from PIL import Image, ImageFilter"
+    ]
+  },
+  {
+    "path": "claude/build_punch_barrage.py",
+    "bytes": 4082,
+    "sha256": "4f9dbfeece8198e06a83c8b5b7c5acc16aabb5591ed73819b4683dd36e47e77b",
+    "functions": [],
+    "imports": [
+      "import math",
+      "from PIL import Image, ImageFilter",
+      "import numpy as np"
+    ]
+  },
+  {
+    "path": "claude/build_run_shot.py",
+    "bytes": 3307,
+    "sha256": "1cbe9124a083336e9e4f016723ed436d98f4b322c0b19faceb88c3a07d1b7f03",
+    "functions": [],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from PIL import Image",
+      "import stadium3d as S"
+    ]
+  },
+  {
+    "path": "claude/camera_move_spec.md",
+    "bytes": 9833,
+    "sha256": "ef3ca212795f9b9fcedb288e7173ae147384cb3a24a6725b678b2e3693f9d6d3"
+  },
+  {
+    "path": "claude/floor3d.py",
+    "bytes": 2945,
+    "sha256": "63da01f6e685f1adfcbf607e293c901419eef84c2dea86470a4a7ed7fd4042e3",
+    "functions": [
+      "draw_floor",
+      "floor_gif",
+      "y_of",
+      "x_of",
+      "shade"
+    ],
+    "imports": [
+      "import math",
+      "from PIL import Image, ImageDraw"
+    ]
+  },
+  {
+    "path": "claude/make_cut37_v2_spec.py",
+    "bytes": 4481,
+    "sha256": "86f657c50e96a9bb55f1c9ca231dd8606460fe8f8402aa768beb668bba803bab",
+    "functions": [
+      "lerp",
+      "ease",
+      "F"
+    ],
+    "imports": [
+      "import json, random, shutil, os"
+    ]
+  },
+  {
+    "path": "claude/make_fx.py",
+    "bytes": 1921,
+    "sha256": "36bb100afb408edf956438bbe2f6d5223385896059b40e5e23ace90a263dd082",
+    "functions": [
+      "radial",
+      "horizontal",
+      "flash"
+    ],
+    "imports": [
+      "from PIL import Image, ImageDraw",
+      "import math, random, os"
+    ]
+  },
+  {
+    "path": "claude/rig_tree (1).py",
+    "bytes": 7129,
+    "sha256": "0e32a4914230c124c7a9e6d25741a8740fb1aad3412dd6dac5cf0c3877b1bfbc",
+    "functions": [
+      "T",
+      "R",
+      "S",
+      "local_matrix",
+      "world_matrices",
+      "turn_matrix",
+      "apply_homography",
+      "lerp",
+      "ease_out",
+      "render",
+      "world",
+      "compose"
+    ],
+    "imports": [
+      "import json, math, sys",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "claude/rig_tree.py",
+    "bytes": 7129,
+    "sha256": "0e32a4914230c124c7a9e6d25741a8740fb1aad3412dd6dac5cf0c3877b1bfbc",
+    "functions": [
+      "T",
+      "R",
+      "S",
+      "local_matrix",
+      "world_matrices",
+      "turn_matrix",
+      "apply_homography",
+      "lerp",
+      "ease_out",
+      "render",
+      "world",
+      "compose"
+    ],
+    "imports": [
+      "import json, math, sys",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "claude/scatter_exit (1).py",
+    "bytes": 2147,
+    "sha256": "f51d8f4f78a710dede135c6a0075e7bb6c7708cc3a55452f61b0e254530b118e",
+    "functions": [
+      "_pose",
+      "scatter_exit"
+    ],
+    "imports": [
+      "import math"
+    ]
+  },
+  {
+    "path": "claude/sphere.py",
+    "bytes": 3786,
+    "sha256": "90fd92e7d189f2fd1828bf0aa9adfd18ed6d84c7a6eb2fda34ab59b17e7008d4",
+    "functions": [
+      "equirect_from_robinson",
+      "_sample",
+      "render_globe",
+      "spin_gif"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "claude/stadium3d.py",
+    "bytes": 4282,
+    "sha256": "8f53906b54fcaf3ac66fd6aed9e39f1c9ddcfaca123039297fc6bfed89db63b6",
+    "functions": [
+      "load_panels",
+      "look_at",
+      "project",
+      "homography",
+      "draw_quad",
+      "strips",
+      "billboard"
+    ],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "gpt/ASTRA_HANDOFF.md",
+    "bytes": 1362,
+    "sha256": "c991f959188ea304e52f4197393b110a224b266f11658f40a9a5066a1fde64bf"
+  },
+  {
+    "path": "gpt/ASTRA_MASTER_HANDOFF.md",
+    "bytes": 13286,
+    "sha256": "b4000856525f37149036193e90bb0cc3462d3d2d92c036fdfa698a55a2f7f9ee"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/ASTRA_HANDOFF.md",
+    "bytes": 1362,
+    "sha256": "c991f959188ea304e52f4197393b110a224b266f11658f40a9a5066a1fde64bf"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/punch_barrage_params.json",
+    "bytes": 848,
+    "sha256": "4efabaf9c530249b155f824515f4a0212173428b27db1b1f5ede173c19fb0cf9",
+    "keys": [
+      "canvas",
+      "fps",
+      "preset",
+      "punch",
+      "shoulders",
+      "body",
+      "motion_blur",
+      "camera",
+      "speedline"
+    ]
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/punch_barrage_speedline_topmost.py",
+    "bytes": 10013,
+    "sha256": "380956346308bc01b8e1369e4ef967bec66150b64a69498657759deb0bd2aa52",
+    "functions": [
+      "clamp01",
+      "ease_in",
+      "ease_out",
+      "lerp",
+      "load_params",
+      "build_speedline_overlay",
+      "pulse_strength",
+      "main",
+      "render_fractional"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import json",
+      "import math",
+      "import subprocess",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff.zip",
+    "bytes": 5269,
+    "sha256": "5e0650da370de410fd03bbabd02af59d62f6be5c595fc259dce0e2ac368ec7cb"
+  },
+  {
+    "path": "gpt/build_tera_globe.py",
+    "bytes": 331,
+    "sha256": "5ecace34e1f4ef0ae94bf68f3f4c249e3757ee32e4ecbfee47b2f916f4dfc000",
+    "functions": [],
+    "imports": []
+  },
+  {
+    "path": "gpt/claw_catch_parenting_test_spec.json",
+    "bytes": 26410,
+    "sha256": "10a08f9f954ee3817c4518595051a9c117abb1cae3c8cdca9c4cfb90c115c70e",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ]
+  },
+  {
+    "path": "gpt/claw_turn_knuckle_rig_probe.json",
+    "bytes": 15484,
+    "sha256": "29782c2bc7cb2f60c19e9f8b3eddf06094088989cf51f6f3665cf5586ace2a0e",
+    "keys": "list"
+  },
+  {
+    "path": "gpt/claw_turn_knuckle_rig_spec.json",
+    "bytes": 59503,
+    "sha256": "33b2fd5744c6f2686b75edaddea98495925c51bdeb3ffbd679b90ba5f4cac1b1",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ]
+  },
+  {
+    "path": "gpt/cut37_parent_child_force_v3_probe.json",
+    "bytes": 8616,
+    "sha256": "ff2e1b374f752c83ddabff601835e4df3a9cae91672165dde0fe3745f4c62ae4",
+    "keys": "list"
+  },
+  {
+    "path": "gpt/cut37_parent_child_force_v3_spec.json",
+    "bytes": 35348,
+    "sha256": "9a7915a74ebca8aff23a7effc79625f4fba53878b4606fbf983376f40519130f",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ]
+  },
+  {
+    "path": "gpt/mesh_dance_test.py",
+    "bytes": 9088,
+    "sha256": "ddd58e78e91a03df4e252e16590c816ea50412d7d5f350cc8f741f43835b4825",
+    "functions": [
+      "load_poses",
+      "warp_rgba",
+      "bump",
+      "gauss",
+      "motion_params",
+      "rgba_on_white"
+    ],
+    "imports": [
+      "from PIL import Image",
+      "import numpy as np",
+      "import cv2",
+      "import math",
+      "import statistics",
+      "import subprocess",
+      "from pathlib import Path"
+    ]
+  },
+  {
+    "path": "gpt/punch_barrage_flash_v3_params.json",
+    "bytes": 533,
+    "sha256": "858ddf4ddd65241ec08f70e71e9ca87b88cc8ad9f1d985c84296530102b3a6c2",
+    "keys": [
+      "canvas",
+      "fps",
+      "frames",
+      "effect_source",
+      "effect",
+      "notes"
+    ]
+  },
+  {
+    "path": "gpt/punch_barrage_params.json",
+    "bytes": 848,
+    "sha256": "4efabaf9c530249b155f824515f4a0212173428b27db1b1f5ede173c19fb0cf9",
+    "keys": [
+      "canvas",
+      "fps",
+      "preset",
+      "punch",
+      "shoulders",
+      "body",
+      "motion_blur",
+      "camera",
+      "speedline"
+    ]
+  },
+  {
+    "path": "gpt/punch_barrage_rig_v2.py",
+    "bytes": 501,
+    "sha256": "3c342a019de81d7d43fb07318d956793af31a1cc43df132d9e0cdd8f340c4113",
+    "functions": [],
+    "imports": []
+  },
+  {
+    "path": "gpt/punch_barrage_rig_v2_params.json",
+    "bytes": 640,
+    "sha256": "bad4e686f0cb86a84ea2bb6705da4921ac0a874a28e22c54e8cb74d7c761aedf",
+    "keys": [
+      "canvas",
+      "fps",
+      "punches",
+      "step_frames",
+      "punch_duration_frames",
+      "substeps",
+      "shoulders",
+      "fist_order",
+      "notes"
+    ]
+  },
+  {
+    "path": "gpt/punch_barrage_speedline_pulse_v4_params.json",
+    "bytes": 640,
+    "sha256": "05ffed7104c40800974e4db08abd6671f1a2793a51a6db61241f89ee61bbd039",
+    "keys": [
+      "preset",
+      "fps",
+      "duration_sec",
+      "punches",
+      "punch_step_frames",
+      "punch_duration_frames",
+      "motion_blur",
+      "speedline",
+      "body"
+    ]
+  },
+  {
+    "path": "gpt/punch_barrage_speedline_topmost.py",
+    "bytes": 10013,
+    "sha256": "380956346308bc01b8e1369e4ef967bec66150b64a69498657759deb0bd2aa52",
+    "functions": [
+      "clamp01",
+      "ease_in",
+      "ease_out",
+      "lerp",
+      "load_params",
+      "build_speedline_overlay",
+      "pulse_strength",
+      "main",
+      "render_fractional"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import json",
+      "import math",
+      "import subprocess",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "gpt/run25d_camera_box_params.json",
+    "bytes": 624,
+    "sha256": "db83e72fb8f172a28781eb06e88951cd455105d604a2ae7b656002ee524a0f32",
+    "keys": [
+      "source_basis",
+      "frames",
+      "frame_ms",
+      "camera_start",
+      "camera_end",
+      "pose_swap",
+      "room",
+      "background"
+    ]
+  },
+  {
+    "path": "gpt/run_claw_catch_test.py",
+    "bytes": 393,
+    "sha256": "abceae435c5f01a597575d1710ec0d0d637c58072c3aacf5851c2adf4552ef86",
+    "functions": [],
+    "imports": [
+      "import json, importlib.util"
+    ]
+  },
+  {
+    "path": "gpt/run_claw_turn_knuckle_rig.py",
+    "bytes": 385,
+    "sha256": "01c246943e8e03d52b34eb08979619b5b42ec3cfdc58791447b1e4b5ebabb6e6",
+    "functions": [],
+    "imports": [
+      "import json, importlib.util"
+    ]
+  },
+  {
+    "path": "gpt/stadium3d_floorfix.py",
+    "bytes": 3460,
+    "sha256": "fdbe99e6ffd554421c2159dfb4a4c91f4a663665128a4d66b64b3c80236e5a02",
+    "functions": [
+      "_crop",
+      "load_panels",
+      "look_at",
+      "_project",
+      "draw_quad",
+      "strips",
+      "billboard"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import cv2",
+      "from PIL import Image"
+    ]
+  },
+  {
+    "path": "gpt/tera_globe_params.json",
+    "bytes": 351,
+    "sha256": "3898138602015c4759cdbe33bdc8d266a6ab4fac481c784ad57f30ca571101fa",
+    "keys": [
+      "engine",
+      "land",
+      "cloud",
+      "size",
+      "frames",
+      "fps",
+      "light",
+      "ambient",
+      "rim",
+      "cloud_opacity",
+      "cloud_relative_speed",
+      "projection"
+    ]
+  }
+]

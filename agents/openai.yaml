@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animation Meme Rig"
+  short_description: "Animate supplied PNG parts with one shared Python rig"
+  default_prompt: "Use $animation-meme-rig to animate my supplied PNG parts with a reusable JSON shot and verify the result."

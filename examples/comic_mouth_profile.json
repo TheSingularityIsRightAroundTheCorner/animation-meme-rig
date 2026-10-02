@@ -1,0 +1,12 @@
+{
+  "source_size": [1920, 1080],
+  "mouth": [560, 715, 95, 55],
+  "amplitude": 0.22,
+  "angular_frequency": 21.991148575,
+  "duration": 2.4,
+  "fps": 30,
+  "on_twos": true,
+  "pauses": [[1.45, 1.8]],
+  "mesh_step": 16,
+  "preview_width": 640
+}

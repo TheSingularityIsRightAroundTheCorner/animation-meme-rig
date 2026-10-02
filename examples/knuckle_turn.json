@@ -1,0 +1,2803 @@
+{
+  "base_dir": ".",
+  "out": "knuckle_turn.gif",
+  "out_size": [
+    640,
+    640
+  ],
+  "bg": [
+    245,
+    245,
+    245,
+    255
+  ],
+  "parts": {
+    "hand_front": {
+      "file": "hand_front.png",
+      "pivot": [
+        111.0,
+        56.0
+      ],
+      "parent": null,
+      "z": 10,
+      "visible": true
+    },
+    "front_claw1": {
+      "file": "front_claw1.png",
+      "pivot": [
+        91.5,
+        117.0
+      ],
+      "parent": "hand_front",
+      "z": 20,
+      "visible": false
+    },
+    "front_claw2": {
+      "file": "front_claw2.png",
+      "pivot": [
+        125.5,
+        118.0
+      ],
+      "parent": "hand_front",
+      "z": 21,
+      "visible": false
+    },
+    "front_claw3": {
+      "file": "front_claw3.png",
+      "pivot": [
+        150.0,
+        115.0
+      ],
+      "parent": "hand_front",
+      "z": 22,
+      "visible": false
+    },
+    "hand_side": {
+      "file": "hand_side.png",
+      "pivot": [
+        273.0,
+        58.0
+      ],
+      "parent": null,
+      "z": 10,
+      "visible": false
+    },
+    "side_claw1": {
+      "file": "side_claw1.png",
+      "pivot": [
+        277.0,
+        130.0
+      ],
+      "parent": "hand_side",
+      "z": 20,
+      "visible": false
+    },
+    "side_claw2": {
+      "file": "side_claw2.png",
+      "pivot": [
+        263.0,
+        188.0
+      ],
+      "parent": "hand_side",
+      "z": 21,
+      "visible": false
+    },
+    "side_claw3": {
+      "file": "side_claw3.png",
+      "pivot": [
+        240.5,
+        196.0
+      ],
+      "parent": "hand_side",
+      "z": 22,
+      "visible": false
+    }
+  },
+  "frames": [
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 0.0,
+          "dy": 0.0,
+          "turn": {
+            "axis_x": 111.0,
+            "axis_y": 56.0,
+            "theta": -0.0,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 111.0,
+            "axis_y": 56.0,
+            "theta": -0.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 111.0,
+            "axis_y": 56.0,
+            "theta": -0.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 111.0,
+            "axis_y": 56.0,
+            "theta": -0.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 1.9374334135056348,
+          "dy": 0.04075222433584472,
+          "turn": {
+            "axis_x": 112.93743341350563,
+            "axis_y": 56.04075222433585,
+            "theta": -0.3372781065088758,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 112.93743341350563,
+            "axis_y": 56.04075222433585,
+            "theta": -0.3372781065088758,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 112.93743341350563,
+            "axis_y": 56.04075222433585,
+            "theta": -0.3372781065088758,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 112.93743341350563,
+            "axis_y": 56.04075222433585,
+            "theta": -0.3372781065088758,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 7.451601737201585,
+          "dy": 0.15865002998912459,
+          "turn": {
+            "axis_x": 118.45160173720159,
+            "axis_y": 56.158650029989126,
+            "theta": -1.3136094674556216,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 118.45160173720159,
+            "axis_y": 56.158650029989126,
+            "theta": -1.3136094674556216,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 118.45160173720159,
+            "axis_y": 56.158650029989126,
+            "theta": -1.3136094674556216,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 118.45160173720159,
+            "axis_y": 56.158650029989126,
+            "theta": -1.3136094674556216,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 15.986645440485336,
+          "dy": 0.3467006071605804,
+          "turn": {
+            "axis_x": 126.98664544048533,
+            "axis_y": 56.34670060716058,
+            "theta": -2.8757396449704142,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 126.98664544048533,
+            "axis_y": 56.34670060716058,
+            "theta": -2.8757396449704142,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 126.98664544048533,
+            "axis_y": 56.34670060716058,
+            "theta": -2.8757396449704142,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 126.98664544048533,
+            "axis_y": 56.34670060716058,
+            "theta": -2.8757396449704142,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 26.886986077433217,
+          "dy": 0.5965740353640495,
+          "turn": {
+            "axis_x": 137.88698607743322,
+            "axis_y": 56.59657403536405,
+            "theta": -4.970414201183433,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 137.88698607743322,
+            "axis_y": 56.59657403536405,
+            "theta": -4.970414201183433,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 137.88698607743322,
+            "axis_y": 56.59657403536405,
+            "theta": -4.970414201183433,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 137.88698607743322,
+            "axis_y": 56.59657403536405,
+            "theta": -4.970414201183433,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 39.45110700807151,
+          "dy": 0.8976272325137604,
+          "turn": {
+            "axis_x": 150.45110700807152,
+            "axis_y": 56.89762723251376,
+            "theta": -7.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 150.45110700807152,
+            "axis_y": 56.89762723251376,
+            "theta": -7.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 150.45110700807152,
+            "axis_y": 56.89762723251376,
+            "theta": -7.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 150.45110700807152,
+            "axis_y": 56.89762723251376,
+            "theta": -7.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 52.97986130118093,
+          "dy": 1.236126327177146,
+          "turn": {
+            "axis_x": 163.97986130118093,
+            "axis_y": 57.236126327177146,
+            "theta": -10.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 163.97986130118093,
+            "axis_y": 57.236126327177146,
+            "theta": -10.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 163.97986130118093,
+            "axis_y": 57.236126327177146,
+            "theta": -10.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 163.97986130118093,
+            "axis_y": 57.236126327177146,
+            "theta": -10.544378698224852,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 66.81735858309999,
+          "dy": 1.59492853241455,
+          "turn": {
+            "axis_x": 177.81735858309997,
+            "axis_y": 57.59492853241455,
+            "theta": -13.917159763313608,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.0553935860058309,
+          "turn": {
+            "axis_x": 177.81735858309997,
+            "axis_y": 57.59492853241455,
+            "theta": -13.917159763313608,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 177.81735858309997,
+            "axis_y": 57.59492853241455,
+            "theta": -13.917159763313608,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 177.81735858309997,
+            "axis_y": 57.59492853241455,
+            "theta": -13.917159763313608,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 80.38320441324619,
+          "dy": 1.9538024342220361,
+          "turn": {
+            "axis_x": 191.38320441324618,
+            "axis_y": 57.953802434222034,
+            "theta": -17.609467455621303,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.19825072886297376,
+          "turn": {
+            "axis_x": 191.38320441324618,
+            "axis_y": 57.953802434222034,
+            "theta": -17.609467455621303,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 191.38320441324618,
+            "axis_y": 57.953802434222034,
+            "theta": -17.609467455621303,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 191.38320441324618,
+            "axis_y": 57.953802434222034,
+            "theta": -17.609467455621303,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 93.19550738152039,
+          "dy": 2.2904556206946705,
+          "turn": {
+            "axis_x": 204.19550738152037,
+            "axis_y": 58.29045562069467,
+            "theta": -21.568047337278102,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.39358600583090375,
+          "turn": {
+            "axis_x": 204.19550738152037,
+            "axis_y": 58.29045562069467,
+            "theta": -21.568047337278102,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 204.19550738152037,
+            "axis_y": 58.29045562069467,
+            "theta": -21.568047337278102,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 204.19550738152037,
+            "axis_y": 58.29045562069467,
+            "theta": -21.568047337278102,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 104.88463053540133,
+          "dy": 2.5822042436867654,
+          "turn": {
+            "axis_x": 215.88463053540133,
+            "axis_y": 58.58220424368677,
+            "theta": -25.739644970414204,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.6064139941690961,
+          "turn": {
+            "axis_x": 215.88463053540133,
+            "axis_y": 58.58220424368677,
+            "theta": -25.739644970414204,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 215.88463053540133,
+            "axis_y": 58.58220424368677,
+            "theta": -25.739644970414204,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 215.88463053540133,
+            "axis_y": 58.58220424368677,
+            "theta": -25.739644970414204,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 115.19814495537148,
+          "dy": 2.808079648975113,
+          "turn": {
+            "axis_x": 226.19814495537148,
+            "axis_y": 58.80807964897511,
+            "theta": -30.07100591715976,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.8017492711370262,
+          "turn": {
+            "axis_x": 226.19814495537148,
+            "axis_y": 58.80807964897511,
+            "theta": -30.07100591715976,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 226.19814495537148,
+            "axis_y": 58.80807964897511,
+            "theta": -30.07100591715976,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 226.19814495537148,
+            "axis_y": 58.80807964897511,
+            "theta": -30.07100591715976,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 123.99784430634622,
+          "dy": 2.951052848589448,
+          "turn": {
+            "axis_x": 234.99784430634622,
+            "axis_y": 58.95105284858945,
+            "theta": -34.50887573964497,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 0.9446064139941691,
+          "turn": {
+            "axis_x": 234.99784430634622,
+            "axis_y": 58.95105284858945,
+            "theta": -34.50887573964497,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.0553935860058309,
+          "turn": {
+            "axis_x": 234.99784430634622,
+            "axis_y": 58.95105284858945,
+            "theta": -34.50887573964497,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 234.99784430634622,
+            "axis_y": 58.95105284858945,
+            "theta": -34.50887573964497,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 131.25,
+          "dy": 3.0,
+          "turn": {
+            "axis_x": 242.25,
+            "axis_y": 59.0,
+            "theta": -39.0,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 242.25,
+            "axis_y": 59.0,
+            "theta": -39.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.19825072886297376,
+          "turn": {
+            "axis_x": 242.25,
+            "axis_y": 59.0,
+            "theta": -39.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 242.25,
+            "axis_y": 59.0,
+            "theta": -39.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 137.01027720830248,
+          "dy": 2.951052848589448,
+          "turn": {
+            "axis_x": 248.01027720830248,
+            "axis_y": 58.95105284858945,
+            "theta": -43.49112426035503,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 248.01027720830248,
+            "axis_y": 58.95105284858945,
+            "theta": -43.49112426035503,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.39358600583090375,
+          "turn": {
+            "axis_x": 248.01027720830248,
+            "axis_y": 58.95105284858945,
+            "theta": -43.49112426035503,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 248.01027720830248,
+            "axis_y": 58.95105284858945,
+            "theta": -43.49112426035503,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 141.404892372188,
+          "dy": 2.8080796489751134,
+          "turn": {
+            "axis_x": 252.404892372188,
+            "axis_y": 58.80807964897512,
+            "theta": -47.928994082840234,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 252.404892372188,
+            "axis_y": 58.80807964897512,
+            "theta": -47.928994082840234,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.6064139941690961,
+          "turn": {
+            "axis_x": 252.404892372188,
+            "axis_y": 58.80807964897512,
+            "theta": -47.928994082840234,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 252.404892372188,
+            "axis_y": 58.80807964897512,
+            "theta": -47.928994082840234,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 144.6096730510882,
+          "dy": 2.582204243686765,
+          "turn": {
+            "axis_x": 255.6096730510882,
+            "axis_y": 58.58220424368677,
+            "theta": -52.2603550295858,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 255.6096730510882,
+            "axis_y": 58.58220424368677,
+            "theta": -52.2603550295858,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.8017492711370262,
+          "turn": {
+            "axis_x": 255.6096730510882,
+            "axis_y": 58.58220424368677,
+            "theta": -52.2603550295858,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": false,
+          "sy": 0.035,
+          "turn": {
+            "axis_x": 255.6096730510882,
+            "axis_y": 58.58220424368677,
+            "theta": -52.2603550295858,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 146.82868095905823,
+          "dy": 2.2904556206946713,
+          "turn": {
+            "axis_x": 257.82868095905826,
+            "axis_y": 58.29045562069467,
+            "theta": -56.43195266272189,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 257.82868095905826,
+            "axis_y": 58.29045562069467,
+            "theta": -56.43195266272189,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 0.9446064139941691,
+          "turn": {
+            "axis_x": 257.82868095905826,
+            "axis_y": 58.29045562069467,
+            "theta": -56.43195266272189,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.0553935860058309,
+          "turn": {
+            "axis_x": 257.82868095905826,
+            "axis_y": 58.29045562069467,
+            "theta": -56.43195266272189,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 148.27397883141919,
+          "dy": 1.953802434222037,
+          "turn": {
+            "axis_x": 259.2739788314192,
+            "axis_y": 57.953802434222034,
+            "theta": -60.390532544378694,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 259.2739788314192,
+            "axis_y": 57.953802434222034,
+            "theta": -60.390532544378694,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 259.2739788314192,
+            "axis_y": 57.953802434222034,
+            "theta": -60.390532544378694,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.19825072886297376,
+          "turn": {
+            "axis_x": 259.2739788314192,
+            "axis_y": 57.953802434222034,
+            "theta": -60.390532544378694,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.14796136223035,
+          "dy": 1.5949285324145515,
+          "turn": {
+            "axis_x": 260.1479613622304,
+            "axis_y": 57.59492853241455,
+            "theta": -64.08284023668638,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.1479613622304,
+            "axis_y": 57.59492853241455,
+            "theta": -64.08284023668638,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.1479613622304,
+            "axis_y": 57.59492853241455,
+            "theta": -64.08284023668638,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.39358600583090375,
+          "turn": {
+            "axis_x": 260.1479613622304,
+            "axis_y": 57.59492853241455,
+            "theta": -64.08284023668638,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.6294298474848,
+          "dy": 1.2361263271771468,
+          "turn": {
+            "axis_x": 260.6294298474848,
+            "axis_y": 57.236126327177146,
+            "theta": -67.45562130177514,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.6294298474848,
+            "axis_y": 57.236126327177146,
+            "theta": -67.45562130177514,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.6294298474848,
+            "axis_y": 57.236126327177146,
+            "theta": -67.45562130177514,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.6064139941690961,
+          "turn": {
+            "axis_x": 260.6294298474848,
+            "axis_y": 57.236126327177146,
+            "theta": -67.45562130177514,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.86426936169994,
+          "dy": 0.8976272325137601,
+          "turn": {
+            "axis_x": 260.86426936169994,
+            "axis_y": 56.89762723251376,
+            "theta": -70.45562130177515,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.86426936169994,
+            "axis_y": 56.89762723251376,
+            "theta": -70.45562130177515,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.86426936169994,
+            "axis_y": 56.89762723251376,
+            "theta": -70.45562130177515,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.8017492711370262,
+          "turn": {
+            "axis_x": 260.86426936169994,
+            "axis_y": 56.89762723251376,
+            "theta": -70.45562130177515,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.96118628654474,
+          "dy": 0.5965740353640496,
+          "turn": {
+            "axis_x": 260.9611862865447,
+            "axis_y": 56.59657403536405,
+            "theta": -73.02958579881657,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9611862865447,
+            "axis_y": 56.59657403536405,
+            "theta": -73.02958579881657,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9611862865447,
+            "axis_y": 56.59657403536405,
+            "theta": -73.02958579881657,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 0.9446064139941691,
+          "turn": {
+            "axis_x": 260.9611862865447,
+            "axis_y": 56.59657403536405,
+            "theta": -73.02958579881657,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.99248279931035,
+          "dy": 0.3467006071605813,
+          "turn": {
+            "axis_x": 260.9924827993103,
+            "axis_y": 56.34670060716058,
+            "theta": -75.12426035502959,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9924827993103,
+            "axis_y": 56.34670060716058,
+            "theta": -75.12426035502959,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9924827993103,
+            "axis_y": 56.34670060716058,
+            "theta": -75.12426035502959,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9924827993103,
+            "axis_y": 56.34670060716058,
+            "theta": -75.12426035502959,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.99928351638934,
+          "dy": 0.15865002998912414,
+          "turn": {
+            "axis_x": 260.99928351638937,
+            "axis_y": 56.158650029989126,
+            "theta": -76.68639053254438,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.99928351638937,
+            "axis_y": 56.158650029989126,
+            "theta": -76.68639053254438,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.99928351638937,
+            "axis_y": 56.158650029989126,
+            "theta": -76.68639053254438,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.99928351638937,
+            "axis_y": 56.158650029989126,
+            "theta": -76.68639053254438,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 149.99998787248265,
+          "dy": 0.04075222433584624,
+          "turn": {
+            "axis_x": 260.9999878724826,
+            "axis_y": 56.04075222433585,
+            "theta": -77.66272189349112,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9999878724826,
+            "axis_y": 56.04075222433585,
+            "theta": -77.66272189349112,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9999878724826,
+            "axis_y": 56.04075222433585,
+            "theta": -77.66272189349112,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 260.9999878724826,
+            "axis_y": 56.04075222433585,
+            "theta": -77.66272189349112,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": true,
+          "dx": 150.0,
+          "dy": 3.6739403974420594e-16,
+          "turn": {
+            "axis_x": 261.0,
+            "axis_y": 56.0,
+            "theta": -78.0,
+            "focal": 420.0
+          }
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "front_claw1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 261.0,
+            "axis_y": 56.0,
+            "theta": -78.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw1": {
+          "visible": false
+        },
+        "front_claw2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 261.0,
+            "axis_y": 56.0,
+            "theta": -78.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw2": {
+          "visible": false
+        },
+        "front_claw3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 261.0,
+            "axis_y": 56.0,
+            "theta": -78.0,
+            "focal": 420.0
+          }
+        },
+        "side_claw3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 0.896
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 0.6479999999999999
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 0.352
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": true,
+          "sy": 0.10399999999999987
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 1.0
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 0.896
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 0.6479999999999999
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 0.352
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": true,
+          "sy": 0.10399999999999987
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 1.0
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 0.896
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 0.6479999999999999
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 0.352
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": true,
+          "sy": 0.10399999999999987
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": false,
+          "sy": 0.035
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": false,
+          "sy": 0.035
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": false,
+          "sy": 0.035
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": false,
+          "sy": 0.035
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    },
+    {
+      "layers": {
+        "hand_front": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true
+        },
+        "front_claw1": {
+          "visible": false
+        },
+        "side_claw1": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw2": {
+          "visible": false
+        },
+        "side_claw2": {
+          "visible": false,
+          "sy": 0.035
+        },
+        "front_claw3": {
+          "visible": false
+        },
+        "side_claw3": {
+          "visible": false,
+          "sy": 0.035
+        }
+      },
+      "camera": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "ms": 33
+    }
+  ],
+  "probes": [
+    {
+      "name": "front_claw_joint",
+      "point": [
+        91.5,
+        117.0
+      ],
+      "parts": [
+        "hand_front",
+        "front_claw1"
+      ]
+    },
+    {
+      "name": "side_claw_joint",
+      "point": [
+        277.0,
+        130.0
+      ],
+      "parts": [
+        "hand_side",
+        "side_claw1"
+      ]
+    }
+  ],
+  "version": 1,
+  "mode": "rig",
+  "provenance": "GPT claw_turn_knuckle_rig_spec.json; unchanged authored frames, original artwork required; affine probes do not certify side silhouette."
+}

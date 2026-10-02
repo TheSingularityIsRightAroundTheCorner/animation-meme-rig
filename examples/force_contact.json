@@ -1,0 +1,1735 @@
+{
+  "base_dir": ".",
+  "out": "force_contact.gif",
+  "out_size": [
+    960,
+    540
+  ],
+  "bg": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "parts": {
+    "gpt_side": {
+      "file": "gpt_side.png",
+      "pivot": [
+        320,
+        175
+      ],
+      "parent": null,
+      "z": 5,
+      "visible": true
+    },
+    "gpt_catch_body": {
+      "file": "gpt_catch_body.png",
+      "pivot": [
+        320,
+        175
+      ],
+      "parent": null,
+      "z": 6,
+      "visible": false
+    },
+    "gpt_catch_arm": {
+      "file": "gpt_catch_arm.png",
+      "pivot": [
+        245,
+        265
+      ],
+      "parent": "gpt_catch_body",
+      "z": 40,
+      "visible": false
+    },
+    "claude_body_start": {
+      "file": "claude_body_start.png",
+      "pivot": [
+        650,
+        185
+      ],
+      "parent": null,
+      "z": 10,
+      "visible": true
+    },
+    "claude_hand_start": {
+      "file": "claude_hand_start.png",
+      "pivot": [
+        760,
+        155
+      ],
+      "parent": "claude_body_start",
+      "z": 22,
+      "visible": true
+    },
+    "claw_start_1": {
+      "file": "claw_start_1.png",
+      "pivot": [
+        690,
+        75
+      ],
+      "parent": "claude_hand_start",
+      "z": 28,
+      "visible": true
+    },
+    "claw_start_2": {
+      "file": "claw_start_2.png",
+      "pivot": [
+        670,
+        72
+      ],
+      "parent": "claude_hand_start",
+      "z": 28,
+      "visible": true
+    },
+    "claw_start_3": {
+      "file": "claw_start_3.png",
+      "pivot": [
+        645,
+        69
+      ],
+      "parent": "claude_hand_start",
+      "z": 28,
+      "visible": true
+    },
+    "claude_body_attack": {
+      "file": "claude_body_attack.png",
+      "pivot": [
+        620,
+        230
+      ],
+      "parent": null,
+      "z": 12,
+      "visible": false
+    },
+    "claude_arm_attack": {
+      "file": "claude_arm_attack.png",
+      "pivot": [
+        600,
+        260
+      ],
+      "parent": "claude_body_attack",
+      "z": 24,
+      "visible": false
+    },
+    "claw_end_1": {
+      "file": "claw_end_1.png",
+      "pivot": [
+        190,
+        264
+      ],
+      "parent": "claude_arm_attack",
+      "z": 30,
+      "visible": false
+    },
+    "claw_end_2": {
+      "file": "claw_end_2.png",
+      "pivot": [
+        165,
+        264
+      ],
+      "parent": "claude_arm_attack",
+      "z": 30,
+      "visible": false
+    },
+    "claw_end_3": {
+      "file": "claw_end_3.png",
+      "pivot": [
+        140,
+        264
+      ],
+      "parent": "claude_arm_attack",
+      "z": 30,
+      "visible": false
+    }
+  },
+  "frames": [
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": 0,
+          "dx": 0,
+          "dy": 0
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        390.8888888888889,
+        0.0,
+        885.1111111111111,
+        278.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -0.4296875,
+          "dx": -0.4296875,
+          "dy": 0.2578125
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        390.8888888888889,
+        0.0,
+        885.1111111111111,
+        278.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -1.5625,
+          "dx": -1.5625,
+          "dy": 0.9375
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        390.8888888888889,
+        0.0,
+        885.1111111111111,
+        278.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -3.1640625,
+          "dx": -3.1640625,
+          "dy": 1.8984375
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        355.882375,
+        9.983750000000008,
+        849.090375,
+        287.41325
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -5.0,
+          "dx": -5.0,
+          "dy": 3.0
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        324.3734444444445,
+        18.96999999999999,
+        816.6685555555556,
+        295.88599999999997
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -6.8359375,
+          "dx": -6.8359375,
+          "dy": 4.1015625
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        296.17801388888887,
+        27.011250000000004,
+        787.6562361111111,
+        303.46775
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -8.4375,
+          "dx": -8.4375,
+          "dy": 5.0625
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        271.1120000000001,
+        34.15999999999999,
+        761.864,
+        310.20799999999997
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -9.5703125,
+          "dx": -9.5703125,
+          "dy": 5.7421875
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        248.99131944444446,
+        40.46875,
+        739.1024305555555,
+        316.15625
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": true
+        },
+        "claude_hand_start": {
+          "visible": true,
+          "rot": -10,
+          "dx": -10,
+          "dy": 6
+        },
+        "claude_body_attack": {
+          "visible": false
+        },
+        "claude_arm_attack": {
+          "visible": false
+        },
+        "claw_start_1": {
+          "visible": true
+        },
+        "claw_end_1": {
+          "visible": false
+        },
+        "claw_start_2": {
+          "visible": true
+        },
+        "claw_end_2": {
+          "visible": false
+        },
+        "claw_start_3": {
+          "visible": true
+        },
+        "claw_end_3": {
+          "visible": false
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        229.6318888888889,
+        45.99,
+        719.1821111111111,
+        321.362
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 42,
+          "dy": -4
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        212.84962500000003,
+        50.77625,
+        701.913625,
+        325.87475
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 28.13671875,
+          "dy": -2.6796875
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        198.46044444444445,
+        54.88,
+        687.1075555555556,
+        329.744
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 17.71875,
+          "dy": -1.6875
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        186.28026388888892,
+        58.35375,
+        674.5744861111111,
+        333.01925
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 10.25390625,
+          "dy": -0.9765625
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": true
+        },
+        "gpt_catch_body": {
+          "visible": false
+        },
+        "gpt_catch_arm": {
+          "visible": false
+        }
+      },
+      "camera": [
+        176.125,
+        61.25,
+        664.125,
+        335.75
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 5.25,
+          "dy": -0.5
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -18,
+          "dy": 18,
+          "rot": 12
+        }
+      },
+      "camera": [
+        167.81056944444447,
+        63.621249999999996,
+        655.5696805555556,
+        337.98575
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 2.21484375,
+          "dy": -0.2109375
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -7.59375,
+          "dy": 7.59375,
+          "rot": 5.0625
+        }
+      },
+      "camera": [
+        161.15288888888892,
+        65.52,
+        648.7191111111111,
+        339.776
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 0.65625,
+          "dy": -0.0625
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -2.25,
+          "dy": 2.25,
+          "rot": 1.5
+        }
+      },
+      "camera": [
+        155.96787500000002,
+        66.99875,
+        643.383875,
+        341.17025
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "claude_body_attack",
+          "dx": 0.08203125,
+          "dy": -0.0078125
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -0.28125,
+          "dy": 0.28125,
+          "rot": 0.1875
+        }
+      },
+      "camera": [
+        152.07144444444447,
+        68.11,
+        639.3745555555556,
+        342.218
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 0
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": 0.0,
+          "dy": 0.0,
+          "rot": 0.0
+        }
+      },
+      "camera": [
+        149.2795138888889,
+        68.90625,
+        636.5017361111111,
+        342.96875
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        }
+      },
+      "camera": [
+        147.40800000000002,
+        69.44,
+        634.576,
+        343.472
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": -1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -5.953360768175586,
+          "dy": -1.1906721536351172,
+          "rot": -1.4883401920438966
+        }
+      },
+      "camera": [
+        146.27281944444445,
+        69.76375,
+        633.4079305555556,
+        343.77725
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 2
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -10.589849108367627,
+          "dy": -2.117969821673525,
+          "rot": -2.6474622770919067
+        }
+      },
+      "camera": [
+        145.6898888888889,
+        69.93,
+        632.8081111111111,
+        343.93399999999997
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": -2
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -14.074074074074073,
+          "dy": -2.8148148148148144,
+          "rot": -3.518518518518518
+        }
+      },
+      "camera": [
+        145.47512500000002,
+        69.99125,
+        632.587125,
+        343.99175
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -16.570644718792867,
+          "dy": -3.3141289437585733,
+          "rot": -4.142661179698217
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": -1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -18.244170096021946,
+          "dy": -3.6488340192043895,
+          "rot": -4.561042524005487
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 0
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -19.25925925925926,
+          "dy": -3.8518518518518516,
+          "rot": -4.814814814814815
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": 1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -19.780521262002743,
+          "dy": -3.9561042524005487,
+          "rot": -4.945130315500686
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": -1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -19.972565157750346,
+          "dy": -3.9945130315500688,
+          "rot": -4.993141289437586
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    },
+    {
+      "layers": {
+        "claude_body_start": {
+          "visible": false
+        },
+        "claude_hand_start": {
+          "visible": false
+        },
+        "claude_body_attack": {
+          "visible": true,
+          "dx": -1
+        },
+        "claude_arm_attack": {
+          "visible": true,
+          "parent": "gpt_catch_arm",
+          "dx": 0,
+          "dy": 0,
+          "rot": 0
+        },
+        "claw_start_1": {
+          "visible": false
+        },
+        "claw_end_1": {
+          "visible": true
+        },
+        "claw_start_2": {
+          "visible": false
+        },
+        "claw_end_2": {
+          "visible": true
+        },
+        "claw_start_3": {
+          "visible": false
+        },
+        "claw_end_3": {
+          "visible": true
+        },
+        "gpt_side": {
+          "visible": false
+        },
+        "gpt_catch_body": {
+          "visible": true
+        },
+        "gpt_catch_arm": {
+          "visible": true,
+          "dx": -20,
+          "dy": -4,
+          "rot": -5
+        }
+      },
+      "camera": [
+        145.44444444444446,
+        70.0,
+        632.5555555555555,
+        344.0
+      ],
+      "ms": 50
+    }
+  ],
+  "probes": [
+    {
+      "name": "gpt_force",
+      "point": [
+        245,
+        265
+      ],
+      "parts": [
+        "gpt_catch_arm"
+      ]
+    },
+    {
+      "name": "claude_caught_arm",
+      "point": [
+        245,
+        265
+      ],
+      "parts": [
+        "claude_arm_attack"
+      ]
+    },
+    {
+      "name": "claw_tip_chain",
+      "point": [
+        140,
+        264
+      ],
+      "parts": [
+        "claude_arm_attack",
+        "claw_end_3"
+      ]
+    }
+  ],
+  "version": 1,
+  "mode": "rig",
+  "provenance": "GPT cut37_parent_child_force_v3_spec.json; unchanged authored frames, original artwork required; affine probes do not certify side silhouette."
+}

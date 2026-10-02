@@ -1,0 +1,42 @@
+{
+  "source_basis": "build_run_shot(1).py",
+  "frames": 42,
+  "frame_ms": 70,
+  "camera_start": {
+    "eye": [
+      5.0,
+      2.3,
+      8.0
+    ],
+    "target": [
+      0.0,
+      1.8,
+      1.0
+    ],
+    "fov": 54.0
+  },
+  "camera_end": {
+    "eye": [
+      0.9,
+      2.6,
+      3.4
+    ],
+    "target": [
+      -0.5,
+      2.1,
+      -11.0
+    ],
+    "fov": 44.0
+  },
+  "pose_swap": {
+    "pose1_until": 0.4,
+    "pose2_until": 0.72,
+    "pose3_after": 0.72
+  },
+  "room": {
+    "width": 14.0,
+    "depth": 22.0,
+    "height": 6.0
+  },
+  "background": "stadium parts.jpg folded into far/left/right/near/floor quads"
+}

@@ -1,0 +1,41 @@
+{
+  "verified_at": "2026-09-23T21:01:30.691940+00:00",
+  "tests_run": 119,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "previous_tests": 111,
+  "new_offset_tests": 8,
+  "failure_groups": 46,
+  "original_files_unchanged": 41,
+  "numeric_probe_frames_matching": 80,
+  "punch_reference_frames_pixel_exact": 21,
+  "missing_original_art_and_visual_outputs": true,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-14.1.2-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "opencv": "5.0.0",
+    "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "original_files_verified": 41,
+    "source_hash_changes": []
+  },
+  "test_file_sha256": {
+    "tests/_support.py": "0e584afa83693ff7c90ca8da2160be4adb5d754221826ffe2918e900c033765e",
+    "tests/test_beat_offset.py": "99ac225a6f90369a04ae79e81a25e38c72b4b451c7d0cd5d54a6d3174afd99c3",
+    "tests/test_camera_output.py": "1c0182641cbb333e8aebfc0d0ffe563a454823c2524d9e2e672bb6c0e83cfe71",
+    "tests/test_camera_regressions.py": "ffcee56848b2a654105e4ce2aca0826c0161a1e2e72709bc3af5713877a5f222",
+    "tests/test_cli.py": "4ff7dcc6383c0d0f8ae38b90854440c725df236a7527d4a229852ca88ffab222",
+    "tests/test_cli_modes.py": "355ca3cb10dd57303bdbe8aa4c9801486122457830522e096ebb2e22ea1096b6",
+    "tests/test_documented_edges.py": "f57fc05023a246a7e984659b63adf91d3da00ad4b83d1d27d34e50cadafffa10",
+    "tests/test_effects_assets.py": "f723b5aa7259c652b5d6bf90d02fd912ecb21fee7777e15c4b88d5e7dd8c3d2e",
+    "tests/test_motion_regressions.py": "9222fff5aadf17a1392afca975f48e2cb71878a085b73fa38a86bf50b5f4194d",
+    "tests/test_output.py": "549a067fa97aae9f6be00d23231d4fca3716a8f7d22283c4cbc9d1ffe42d66af",
+    "tests/test_render_guards.py": "542fa79686a63b858512b677b0ea4f7c927125a609ae56827c74f0af2efd9800",
+    "tests/test_rig.py": "d72db9c5ec24f20934c1f08dad4c001be52d681a839f5907d3ed431caf0ecd4f",
+    "tests/test_secondary_regressions.py": "37d02e35285021970e8221b4fe484dfd7311b1a2bc8ddc9dc7d248e30bdbb327"
+  },
+  "external_review": "User supplied Claude/Linux 111-test report; not independently rerun here and predates this patch."
+}

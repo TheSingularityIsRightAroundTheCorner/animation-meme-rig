@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "mode": "room",
+  "provenance": "Claude build_run_shot.py; canonical wall crops verified against the author's supplied 1200x1600 stadium parts.jpg on 2026-09-25. Painted white edges remain. Near-plane clipping permits unsliced room panels.",
+  "panel_sheet": "stadium_parts.jpg",
+  "panels": {
+    "far": {
+      "box": [
+        315,
+        387,
+        893,
+        668
+      ],
+      "rotation": 0
+    },
+    "near": {
+      "box": [
+        340,
+        1002,
+        929,
+        1242
+      ],
+      "rotation": 180
+    },
+    "left": {
+      "box": [
+        83,
+        683,
+        304,
+        1008
+      ],
+      "rotation": 270
+    },
+    "right": {
+      "box": [
+        883,
+        646,
+        1162,
+        932
+      ],
+      "rotation": 90
+    },
+    "floor": {
+      "box": [
+        340,
+        700,
+        893,
+        960
+      ],
+      "rotation": 0
+    }
+  },
+  "pose_files": [
+    "angle_1.png",
+    "angle_2.png",
+    "angle_3.png"
+  ],
+  "room": {
+    "width": 14,
+    "depth": 22,
+    "height": 6
+  },
+  "frames": 42,
+  "frame_ms": 70,
+  "out_size": [
+    900,
+    506
+  ],
+  "camera_start": {
+    "eye": [
+      5,
+      2.3,
+      8
+    ],
+    "target": [
+      0,
+      1.8,
+      1
+    ],
+    "fov": 54
+  },
+  "camera_end": {
+    "eye": [
+      0.9,
+      2.6,
+      3.4
+    ],
+    "target": [
+      -0.5,
+      2.1,
+      -11
+    ],
+    "fov": 44
+  },
+  "pose_schedule": [
+    {
+      "at": 0,
+      "part": 0
+    },
+    {
+      "at": 0.4,
+      "part": 1
+    },
+    {
+      "at": 0.72,
+      "part": 2
+    }
+  ],
+  "camera_bob": 0.045,
+  "slices": 1,
+  "actor": {
+    "strides": 3,
+    "height_start": 4,
+    "height_growth": 1.2,
+    "pose_phase": 1.1,
+    "x": -0.35,
+    "sway": 0.15,
+    "bob": 0.1,
+    "z_start": 3,
+    "travel": 2.2
+  }
+}

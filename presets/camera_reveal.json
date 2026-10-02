@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "mode": "camera",
+  "provenance": "camera_move_spec.md spacing profile; supply authored image",
+  "canvas": [
+    3840,
+    3000
+  ],
+  "out_size": [
+    960,
+    540
+  ],
+  "shots": [
+    {
+      "name": "reveal",
+      "frame_start": [
+        508,
+        1369,
+        2900,
+        1630
+      ],
+      "frame_end": [
+        162,
+        380,
+        3556,
+        2000
+      ],
+      "easing": "ease_out",
+      "ease_power": 2,
+      "frames": 14,
+      "motion_blur": true,
+      "blur_steps": 6,
+      "hold_in": 3,
+      "hold_out": 0,
+      "frame_ms": 50,
+      "exposure": [
+        0.5,
+        1
+      ]
+    }
+  ],
+  "parts": {
+    "scene": "scene.png"
+  },
+  "layers": [
+    "scene"
+  ]
+}

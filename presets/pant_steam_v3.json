@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "mode": "pant",
+  "provenance": "Claude build_pant_steam_v3.py; artwork not supplied",
+  "background": "클로지피_배경.png",
+  "divider_background": "배경.png",
+  "actors": [
+    {
+      "profile": {
+        "breath": [
+          [
+            1,
+            0,
+            -5,
+            0.0,
+            110
+          ],
+          [
+            1,
+            0,
+            0,
+            0.0,
+            210
+          ],
+          [
+            1,
+            -14,
+            -4,
+            -1.2,
+            55
+          ],
+          [
+            2,
+            -26,
+            -14,
+            -2.8,
+            55
+          ],
+          [
+            2,
+            -23,
+            -30,
+            -2.5,
+            110
+          ],
+          [
+            2,
+            -23,
+            -23,
+            -2.5,
+            210
+          ],
+          [
+            2,
+            -10,
+            -26,
+            -1.2,
+            55
+          ],
+          [
+            1,
+            4,
+            -9,
+            0.4,
+            55
+          ]
+        ],
+        "neck": [
+          350,
+          900
+        ],
+        "crown": [
+          400,
+          370
+        ],
+        "phase": 4,
+        "parts": {
+          "body1": "gpt_body1",
+          "body2": "gpt_body2",
+          "head": "gpt_head",
+          "hair": "gpt_hair"
+        }
+      },
+      "files": {
+        "gpt_body1": "몸_1_-gpt.png",
+        "gpt_body2": "몸_2_-_gpt.png",
+        "gpt_head": "클로드_지피티_헤드_-_gpt.png",
+        "gpt_hair": "클로드_지피티_헤어_-_gpt.png"
+      },
+      "steam": "지피티_김_클로드_김_-_gpt.png",
+      "side": "left",
+      "steam_phase": 1.7,
+      "steam_delay": 4
+    },
+    {
+      "profile": {
+        "breath": [
+          [
+            1,
+            0,
+            -5,
+            0.0,
+            110
+          ],
+          [
+            1,
+            0,
+            0,
+            0.0,
+            210
+          ],
+          [
+            1,
+            -14,
+            -4,
+            -1.2,
+            55
+          ],
+          [
+            2,
+            -26,
+            -14,
+            -2.8,
+            55
+          ],
+          [
+            2,
+            -23,
+            -30,
+            -2.5,
+            110
+          ],
+          [
+            2,
+            -23,
+            -23,
+            -2.5,
+            210
+          ],
+          [
+            2,
+            -10,
+            -26,
+            -1.2,
+            55
+          ],
+          [
+            1,
+            4,
+            -9,
+            0.4,
+            55
+          ]
+        ],
+        "neck": [
+          1500,
+          640
+        ],
+        "crown": [
+          1455,
+          60
+        ],
+        "phase": 0,
+        "parts": {
+          "body1": "claude_body1",
+          "body2": "claude_body2",
+          "head": "claude_head",
+          "hair": "claude_hair"
+        }
+      },
+      "files": {
+        "claude_body1": "몸_1_-_claude.png",
+        "claude_body2": "몸_2_-_claude.png",
+        "claude_head": "클로드_지피티_헤드_-_claude.png",
+        "claude_hair": "클로드_지피티_헤어_-_claude.png"
+      },
+      "steam": "지피티_김_클로드_김_-_claude.png",
+      "side": "right",
+      "steam_phase": 0,
+      "steam_delay": 4
+    }
+  ],
+  "panel": {
+    "line_x0": 59.0,
+    "slope": 1.6886,
+    "half": 46
+  },
+  "out_size": [
+    835,
+    470
+  ],
+  "breaths": 2,
+  "front_haze": false,
+  "seed": 7
+}

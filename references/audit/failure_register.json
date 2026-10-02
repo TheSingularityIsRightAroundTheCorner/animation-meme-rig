@@ -1,0 +1,707 @@
+{
+  "format_version": 1,
+  "scope": "All historical documented failure groups in supplied handoffs/camera spec/Python comments; additional reproducible audit defects explicitly marked AUDIT.",
+  "source_prefix": "skill_migration/sources/",
+  "baseline": "regression_baseline.json",
+  "baseline_note": "91 contracts captured before any canonical core Python existed;90 expected missing-core errors and1 original-only pass. Final88 after consolidating4 duplicate guards and adding1 full-render RGBA golden. Initial SHA256 and full run results remain immutable in regression_baseline.json. Later forward/CLI checks add separately tested cases; see final test report for delivered count.",
+  "test_id_format": "unittest module.Class.test_method",
+  "fixtures": "Synthetic rectangles, strips, colors, masks, deterministic arrays; source functions loaded without demo side effects. No generated replacement artwork.",
+  "failures": [
+    {
+      "id": "GPT-F01",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Shoulder / arm gaps"
+      ],
+      "failure": "Shoulder/arm gap at parent transition",
+      "tests": [
+        "test_rig.RigRegressionTests.test_joint_anchor_error_below_quarter_pixel",
+        "test_rig.RigRegressionTests.test_reparent_preserves_world_pose_and_descendants"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Synthetic anchors cannot establish actual painted shoulder overlap; original PNGs absent."
+      ]
+    },
+    {
+      "id": "GPT-F02",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Requested fix"
+      ],
+      "failure": "Teleport on reparent/detach/reattach",
+      "tests": [
+        "test_rig.RigRegressionTests.test_reparent_preserves_world_pose_and_descendants",
+        "test_rig.RigRegressionTests.test_detach_reattach_preserves_pose",
+        "test_rig.RigRegressionTests.test_cycle_rejected",
+        "test_rig.RigRegressionTests.test_frame_parent_override_and_detach"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F03",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Force read was too soft"
+      ],
+      "failure": "Weak contact read and equally shaking both characters",
+      "tests": [
+        "test_rig.RigRegressionTests.test_contact_force_transmitted_without_independent_child_command",
+        "test_motion_regressions.PunchMigrationTests.test_punch_profiles_keep_overlap_and_distinct_motion"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Source contact probe equality is affine and forcefulness remains a visual judgment."
+      ]
+    },
+    {
+      "id": "GPT-F04",
+      "source_evidence": [
+        "gpt/ASTRA_HANDOFF.md#Important correction",
+        "gpt/ASTRA_MASTER_HANDOFF.md#Speed lines / impact effects"
+      ],
+      "failure": "Speed lines hidden behind fists",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_speedline_topmost_covers_fist",
+        "test_motion_regressions.PunchMigrationTests.test_gpt_pixels_match_original_temporal_and_camera_formulas"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F05",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Pulse behavior",
+        "gpt/punch_barrage_flash_v3_params.json"
+      ],
+      "failure": "Full-screen flash substituted for effect-only pulse",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_line_pulse_changes_only_effect_pixels_no_fullscreen_flash",
+        "test_effects_assets.EffectsRegressionTests.test_pulse_half_second_envelope_and_disabled",
+        "test_effects_assets.EffectsRegressionTests.test_effect_independent_disable",
+        "test_motion_regressions.PunchMigrationTests.test_disabled_line_effect_does_not_require_an_asset"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F06",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Failed interpretation"
+      ],
+      "failure": "Flat-card rotation lacked perspective and direction",
+      "tests": [
+        "test_rig.RigRegressionTests.test_signed_near_far_perspective_and_axis",
+        "test_rig.RigRegressionTests.test_render_z_crossing_and_transparent_png",
+        "test_rig.RigRegressionTests.test_original_affine_and_perspective_golden"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Depth sorting test verifies explicit crossing, not automatic inference of claw depth from artwork."
+      ]
+    },
+    {
+      "id": "GPT-F07",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Claw extension sequence"
+      ],
+      "failure": "Claw extension detached from knuckle origin",
+      "tests": [
+        "test_rig.RigRegressionTests.test_knuckle_extension_does_not_drift_anchor",
+        "test_rig.RigRegressionTests.test_supplied_probe_logs_affine_only"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Probe files exclude perspective; sequence/silhouette visual confirmation needs missing original assets."
+      ]
+    },
+    {
+      "id": "GPT-F08",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Remaining imperfection"
+      ],
+      "failure": "Projected hand endpoint does not align with side drawing",
+      "tests": [
+        "test_rig.RigRegressionTests.test_side_view_transition_anchor_alignment",
+        "test_render_guards.RenderGuardTests.test_explicit_anchor_alignment_and_projected_diagnostics"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Named-anchor translation is implemented; different silhouettes may still pop. Artist endpoint calibration/optional in-between drawing is required. Existing authored spec remains preserved, not silently retimed."
+      ]
+    },
+    {
+      "id": "GPT-F09",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#Important panel-mapping bug found",
+        "gpt/stadium3d_floorfix.py:20-30"
+      ],
+      "failure": "Crowd used as floor",
+      "tests": [
+        "test_camera_output.CameraRegressionTests.test_explicit_panel_mapping_tan_floor_not_crowd",
+        "test_camera_regressions.ProjectionRegressionTests.test_panel_sheet_path_and_config_are_explicit"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Actual sheet inspected 2026-09-25: stadium_run selected, floorfix obsolete for this sheet; painted white edges remain. See stadium_diagnosis.md."
+      ]
+    },
+    {
+      "id": "GPT-F10",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#GIF / palette handling",
+        "gpt/mesh_dance_test.py:328-331"
+      ],
+      "failure": "48-color banding and frame-zero palette omits later effects",
+      "tests": [
+        "test_output.OutputRegressionTests.test_global_palette_includes_late_effect_colors",
+        "test_output.OutputRegressionTests.test_palette_does_not_regress_to_48_colors",
+        "test_output.OutputRegressionTests.test_gif_preserves_holds_and_late_colors",
+        "test_camera_output.OutputRegressionTests.test_rgb_png_output",
+        "test_output.OutputRegressionTests.test_mp4_is_rgb_playable_and_authored_duration_retained"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F11",
+      "source_evidence": [
+        "gpt/ASTRA_MASTER_HANDOFF.md#What NOT to promote into canonical core"
+      ],
+      "failure": "Generated replacement art/storyboards substituted for supplied hand-drawn PNGs",
+      "tests": [
+        "test_render_guards.RenderGuardTests.test_original_assets_unchanged_and_missing_asset_fails"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "File hashes establish no mutation and missing assets fail; authorship is a human-provided provenance fact, not inferable from pixels. No image-generation tool is invoked by skill."
+      ]
+    },
+    {
+      "id": "GPT-F12",
+      "source_evidence": [
+        "gpt/mesh_dance_test.py:12-14,268-273"
+      ],
+      "failure": "Timing drifts when each beat interval is rounded",
+      "tests": [
+        "test_motion_regressions.MeshAndTimingMigrationTests.test_absolute_fractional_boundaries_do_not_drift"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F13",
+      "source_evidence": [
+        "gpt/mesh_dance_test.py:15-16,62-80"
+      ],
+      "failure": "Per-pose scaling/horizontal bbox recenter changes art composition",
+      "tests": [
+        "test_motion_regressions.MeshAndTimingMigrationTests.test_alignment_preserves_horizontal_layout_and_relative_pose_size"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "GPT-F14",
+      "source_evidence": [
+        "gpt/mesh_dance_test.py:17-20,87-108,171-177"
+      ],
+      "failure": "Unwanted blends, foot drift, excessive breathing",
+      "tests": [
+        "test_motion_regressions.MeshAndTimingMigrationTests.test_pose_swaps_are_hard_cuts",
+        "test_motion_regressions.MeshAndTimingMigrationTests.test_foot_baseline_stays_fixed",
+        "test_motion_regressions.MeshAndTimingMigrationTests.test_motion_presets_match_original_and_breathing_stays_subtle"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Current baseline alignment assumes grounded poses; intentional jumps must be authored explicitly."
+      ]
+    },
+    {
+      "id": "C01",
+      "source_evidence": [
+        "claude/build_hand_turn_final (1).py:3-10"
+      ],
+      "failure": "Signed squash appears symmetric",
+      "tests": [
+        "test_rig.RigRegressionTests.test_signed_near_far_perspective_and_axis"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C02",
+      "source_evidence": [
+        "claude/build_hand_turn_final (1).py:16-19"
+      ],
+      "failure": "Long focal length reads symmetric and turn angle over-flattens hand",
+      "tests": [
+        "test_documented_edges.DocumentedEdgeTests.test_source_hand_perspective_calibration_is_preserved"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "130 focal /45-degree choice is frozen only for the supplied hand example; visual effectiveness depends on missing artwork dimensions."
+      ]
+    },
+    {
+      "id": "C03",
+      "source_evidence": [
+        "claude/stadium3d.py:72-75"
+      ],
+      "failure": "Entire floor disappears when one corner crosses camera",
+      "tests": [
+        "test_camera_regressions.ProjectionRegressionTests.test_slicing_keeps_visible_floor_when_far_corner_crosses_camera",
+        "test_camera_output.CameraRegressionTests.test_floor_strips_retain_visible_floor_crossing_near_plane"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C04",
+      "source_evidence": [
+        "claude/build_jensen_glint.py:43-57"
+      ],
+      "failure": "Diff lens mask leaves eye-white holes",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_lens_fill_closes_white_holes_without_bridging_lenses",
+        "test_secondary_regressions.SecondaryRegressionTests.test_glint_preserves_full_brightness_lenses_in_dark_scene"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C05",
+      "source_evidence": [
+        "claude/make_fx.py:1-3,14,26"
+      ],
+      "failure": "Camera zoom enlarges effect lines into bars",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_line_width_compensates_camera_zoom"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C06",
+      "source_evidence": [
+        "claude/build_punch_barrage.py:48-49"
+      ],
+      "failure": "Punch remains tiny before sudden smudge",
+      "tests": [
+        "test_motion_regressions.PunchMigrationTests.test_punch_does_not_remain_tiny_until_last_moment",
+        "test_motion_regressions.PunchMigrationTests.test_gpt_pixels_match_original_temporal_and_camera_formulas"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Unified heavy primitive preserves supplied GPT1.65 exponent; separate Claude1.7 value is profile data, not averaged across engines."
+      ]
+    },
+    {
+      "id": "C07",
+      "source_evidence": [
+        "claude/camera_move_spec.md:154"
+      ],
+      "failure": "Converting black RGB/alpha-only lines to RGB blacks out frame",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_alpha_only_black_rgb_lines_do_not_blackout_screen",
+        "test_effects_assets.EffectsRegressionTests.test_multiply_transparent_regions_and_internal_whites"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C08",
+      "source_evidence": [
+        "claude/camera_move_spec.md:155,194"
+      ],
+      "failure": "Mismatched part/guide canvases corrupt coordinates",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_canvas_mismatch_rejected",
+        "test_camera_regressions.CameraRegressionTests.test_guide_canvas_mismatch_rejected",
+        "test_camera_output.CameraRegressionTests.test_frame_guide_measured_and_canvas_mismatch_rejected"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C09",
+      "source_evidence": [
+        "claude/camera_move_spec.md:156",
+        "claude/build_dario_zoomout.py:39-44"
+      ],
+      "failure": "Mac decomposed Unicode filenames fail lookup",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_unicode_nfd_asset_name_resolves"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C10",
+      "source_evidence": [
+        "claude/camera_move_spec.md:163,169-190"
+      ],
+      "failure": "Claw/hand/overlay layer and glass timing incorrect",
+      "tests": [
+        "test_documented_edges.DocumentedEdgeTests.test_explicit_layer_roles_and_numeric_sequence",
+        "test_documented_edges.DocumentedEdgeTests.test_time_visibility_keeps_glass_absent_before_entrance",
+        "test_rig.RigRegressionTests.test_render_z_crossing_and_transparent_png"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C11",
+      "source_evidence": [
+        "claude/camera_move_spec.md:187"
+      ],
+      "failure": "Normal blend bright glass obscures base drawing",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_screen_glass_preserves_underlying_detail"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Blend choice is explicit shot data; brightness does not automatically imply screen mode."
+      ]
+    },
+    {
+      "id": "C12",
+      "source_evidence": [
+        "claude/camera_move_spec.md:199"
+      ],
+      "failure": "White cleanup destroys enclosed eye whites",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_edge_white_removal_keeps_enclosed_eye_white"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Cleanup is opt-in; anti-aliased boundaries need art-specific threshold review."
+      ]
+    },
+    {
+      "id": "C13",
+      "source_evidence": [
+        "claude/camera_move_spec.md:200"
+      ],
+      "failure": "Red rough/guide layer accidentally exported",
+      "tests": [
+        "test_render_guards.RenderGuardTests.test_guides_excluded_without_deleting_red_art"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Caller must mark role=guide/diagnostic; legitimate red art is never inferred as a guide."
+      ]
+    },
+    {
+      "id": "C14",
+      "source_evidence": [
+        "claude/camera_move_spec.md:220"
+      ],
+      "failure": "Out-of-canvas crop creates black/white border",
+      "tests": [
+        "test_camera_regressions.CameraRegressionTests.test_out_of_bounds_crop_does_not_silently_create_black_border",
+        "test_effects_assets.AssetRegressionTests.test_border_stripe_and_missing_part_diagnostics"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Border diagnostic is heuristic; authored borders are legitimate and warnings require review."
+      ]
+    },
+    {
+      "id": "C15",
+      "source_evidence": [
+        "claude/camera_move_spec.md:221"
+      ],
+      "failure": "Exposed row/column stripe",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_border_stripe_and_missing_part_diagnostics"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Authored line art can trigger stripe heuristic; this is a review warning, not automatic deletion."
+      ]
+    },
+    {
+      "id": "C16",
+      "source_evidence": [
+        "claude/camera_move_spec.md:222"
+      ],
+      "failure": "Part unintentionally disappears",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_border_stripe_and_missing_part_diagnostics",
+        "test_render_guards.RenderGuardTests.test_original_assets_unchanged_and_missing_asset_fails"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Automated empty-alpha check cannot distinguish occlusion or intended exiting; shot must identify intentionally hidden parts."
+      ]
+    },
+    {
+      "id": "C17",
+      "source_evidence": [
+        "claude/camera_move_spec.md:229"
+      ],
+      "failure": "Upward edge-bound art exposes background",
+      "tests": [
+        "test_effects_assets.AssetRegressionTests.test_edge_bound_part_upward_motion_is_detected"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Warnings identify exposure; no universal motion clamp is applied because upward motion may be intentional."
+      ]
+    },
+    {
+      "id": "C18",
+      "source_evidence": [
+        "claude/camera_move_spec.md:69-71"
+      ],
+      "failure": "Camera easing tail/blur too short to read",
+      "tests": [
+        "test_camera_regressions.CameraRegressionTests.test_camera_endpoints_and_ease_spacing",
+        "test_camera_regressions.CameraRegressionTests.test_compiled_camera_uses_uniform_motion_duration_and_full_blur_states"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "14-frame synthetic contract checks spacing/tail/blur metadata; human perception must be reviewed on target shot."
+      ]
+    },
+    {
+      "id": "C19",
+      "source_evidence": [
+        "claude/build_pant_steam_v3.py:2-10,49-52,159-176"
+      ],
+      "failure": "Heavy steam obscures body; front haze too strong",
+      "tests": [
+        "test_secondary_regressions.SecondaryRegressionTests.test_steam_mask_and_composition_do_not_obscure_character",
+        "test_secondary_regressions.SecondaryRegressionTests.test_steam_motion_matches_source_default"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Final steam strengths and masks depend on the supplied steam PNG; no original art was available."
+      ]
+    },
+    {
+      "id": "C20",
+      "source_evidence": [
+        "claude/build_pant_spec_v3.py:3-9,17-27"
+      ],
+      "failure": "Primary body/head fail to hold while hair settles",
+      "tests": [
+        "test_secondary_regressions.SecondaryRegressionTests.test_breath_primary_holds_while_hair_settles"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C21",
+      "source_evidence": [
+        "claude/floor3d.py:33-39"
+      ],
+      "failure": "Aligned plank ends look like tiles",
+      "tests": [
+        "test_camera_regressions.GlobeScatterFloorRegressionTests.test_floor_stagger_and_integer_scroll_original_exact"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C22",
+      "source_evidence": [
+        "claude/rig_tree.py:166"
+      ],
+      "failure": "Tiny GIF palette creates banding",
+      "tests": [
+        "test_output.OutputRegressionTests.test_palette_does_not_regress_to_48_colors",
+        "test_output.OutputRegressionTests.test_global_palette_includes_late_effect_colors"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C23",
+      "source_evidence": [
+        "claude/scatter_exit (1).py:8-9",
+        "claude/build_cut87_spec (1).py:90-105"
+      ],
+      "failure": "Huge unblurred snap resembles cut; substeps resurrect hidden parts",
+      "tests": [
+        "test_camera_regressions.GlobeScatterFloorRegressionTests.test_scatter_matches_original_and_has_fast_substeps",
+        "test_render_guards.RenderGuardTests.test_substeps_retain_base_visibility",
+        "test_rig.RigRegressionTests.test_temporal_substeps_follow_motion_without_spatial_halo"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "C24",
+      "source_evidence": [
+        "claude/build_punch_barrage.py:3-9,67-78"
+      ],
+      "failure": "Barrage loses alternation/overlap/readable growth and exit",
+      "tests": [
+        "test_motion_regressions.PunchMigrationTests.test_gpt_pixels_match_original_temporal_and_camera_formulas",
+        "test_motion_regressions.PunchMigrationTests.test_punch_profiles_keep_overlap_and_distinct_motion"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "Golden fixture freezes supplied proven GPT rendering. Claude machine-gun profile changes timings/style explicitly; outro is allowed after active barrage."
+      ]
+    },
+    {
+      "id": "C25",
+      "source_evidence": [
+        "claude/build_cut87_spec (1).py:59-67"
+      ],
+      "failure": "Camera following head cancels desired37px crouch",
+      "tests": [
+        "test_documented_edges.DocumentedEdgeTests.test_source_crouch_sink_budget_camera_does_not_cancel"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": [
+        "This authored example remains example-only; source constants retained rather than imposed on generic cameras."
+      ]
+    },
+    {
+      "id": "AUDIT-A01",
+      "source_evidence": [
+        "claude/sphere.py:68"
+      ],
+      "failure": "Zero light vector produces invalid values",
+      "tests": [
+        "test_camera_regressions.GlobeScatterFloorRegressionTests.test_globe_zero_light_rejected"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "AUDIT-A02",
+      "source_evidence": [
+        "claude/stadium3d.py:35-36"
+      ],
+      "failure": "Coincident eye/target or parallel up creates invalid camera basis",
+      "tests": [
+        "test_camera_regressions.ProjectionRegressionTests.test_invalid_camera_basis_rejected"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "AUDIT-A03",
+      "source_evidence": [
+        "gpt/punch_barrage_speedline_topmost.py:81-94"
+      ],
+      "failure": "speedline.enabled was ignored",
+      "tests": [
+        "test_effects_assets.EffectsRegressionTests.test_pulse_half_second_envelope_and_disabled",
+        "test_motion_regressions.PunchMigrationTests.test_disabled_line_effect_does_not_require_an_asset"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "AUDIT-A04",
+      "source_evidence": [
+        "claude/build_jensen_glint.py:91-93"
+      ],
+      "failure": "Tiny positive sparkle scale can produce zero-height image",
+      "tests": [
+        "test_secondary_regressions.SecondaryRegressionTests.test_glint_preserves_full_brightness_lenses_in_dark_scene"
+      ],
+      "coverage": "automated_numeric_or_synthetic_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "AUDIT-F05",
+      "source_evidence": [
+        "independent forward check of rig alpha export, 2026-09-24"
+      ],
+      "failure": "Transparent rig/camera/legacy-pant PNG output flattened alpha, including temporal samples",
+      "tests": [
+        "test_render_guards.RenderGuardTests.test_transparent_rig_png_retains_alpha_through_temporal_blur",
+        "test_cli.CLIRegressionTests.test_camera_alpha_survives_exposure_and_temporal_samples",
+        "test_cli.CLIRegressionTests.test_legacy_pant_transparent_background_preserves_alpha",
+        "test_cli.CLIRegressionTests.test_opaque_modes_reject_alpha_request_explicitly"
+      ],
+      "coverage": "automated_real_png_export_and_premultiplied_temporal_contract",
+      "manual_limitations": []
+    },
+    {
+      "id": "AUDIT-F06",
+      "source_evidence": [
+        "independent CLI forward check, 2026-09-24"
+      ],
+      "failure": "Output path or PNG sequence could overwrite supplied artwork",
+      "tests": [
+        "test_cli.CLIRegressionTests.test_output_cannot_overwrite_supplied_art",
+        "test_cli.CLIRegressionTests.test_sequence_output_cannot_overwrite_numbered_input_asset"
+      ],
+      "coverage": "automated_cli_rejection_and_unchanged_source_bytes",
+      "manual_limitations": []
+    },
+    {
+      "id": "REVIEW-F01",
+      "source_evidence": [
+        "User-supplied Claude review, 2026-09-24; reproduced against previous release ZIP",
+        "beat_offset_regression_baseline.json"
+      ],
+      "failure": "Song beat offset existed in a low-level function but was absent from interval counts, renderer, CLI and spec; supplied offset_ms was silently ignored.",
+      "tests": [
+        "test_beat_offset.BeatOffsetRegressionTests.test_fractional_offset_rounds_absolute_edges_without_drift",
+        "test_beat_offset.BeatOffsetRegressionTests.test_fractional_offset_moves_pose_cuts_on_the_export_timeline",
+        "test_beat_offset.BeatOffsetRegressionTests.test_positive_offset_holds_initial_pose_without_starting_motion_early",
+        "test_beat_offset.BeatOffsetRegressionTests.test_negative_offset_crops_elapsed_motion_without_restarting_phase",
+        "test_beat_offset.BeatOffsetRegressionTests.test_offset_cannot_place_the_entire_sequence_before_output_zero",
+        "test_beat_offset.BeatOffsetRegressionTests.test_scene_offset_must_be_a_finite_number",
+        "test_beat_offset.BeatOffsetRegressionTests.test_portable_schema_exposes_offset_in_milliseconds",
+        "test_cli_modes.CLIModeIntegrationTests.test_mesh_cli_applies_song_offset_to_frame_count_and_pose_cut"
+      ],
+      "coverage": "automated_timing_and_pixel_contracts_plus_real_CLI_export",
+      "manual_limitations": [
+        "The 88.5ms value is a review-provided song example, not an independently measured audio downbeat. Frame-grid quantization still applies."
+      ]
+    },
+    {
+      "id": "REVIEW-F02",
+      "source_evidence": [
+        "Supplied stadium_run_restaged.json/GIF and original stadium parts.jpg, 2026-09-25",
+        "clipping_regression_baseline.json"
+      ],
+      "failure": "Visible side walls and foreground floor dropped when any corner crossed the near plane; height-axis wall strips all failed together.",
+      "tests": [
+        "test_room_clipping.RoomClippingRegressionTests.test_wall_crossing_near_plane_keeps_its_visible_portion",
+        "test_room_clipping.RoomClippingRegressionTests.test_corner_on_camera_plane_is_finite_and_still_visible",
+        "test_room_clipping.RoomClippingRegressionTests.test_one_visible_corner_matches_independent_ray_plane_intersections",
+        "test_room_clipping.RoomClippingRegressionTests.test_clipped_wall_preserves_texture_direction_and_alpha",
+        "test_room_clipping.RoomClippingRegressionTests.test_fully_front_quad_keeps_original_pixels",
+        "test_room_clipping.RoomClippingRegressionTests.test_fully_behind_wall_remains_invisible",
+        "test_room_clipping.RoomClippingRegressionTests.test_closed_view_of_room_needs_no_slicing_to_keep_both_side_walls"
+      ],
+      "coverage": "automated_geometric_pixel_and_original_art_comparison",
+      "manual_limitations": [
+        "No depth buffer or independent second room actor. Open-top views and painted white margins remain intentional scene/art properties."
+      ]
+    }
+  ],
+  "remaining_manual_art_checks": [
+    "Original character PNGs and rendered GIF/MP4 outputs are absent in both archives. Numerical probe JSONs are the only supplied outputs.",
+    "Stadium room has now been checked with original art. Unrelated shoulder overlap, hand silhouettes, forcefulness and steam/art balance still need original shots.",
+    "Authorship/provenance and guide labels are provided by author; pixel heuristics cannot establish them.",
+    "Camera/globe/punch reference fixtures freeze original formulas; golden pixels prove synthetic behavior, not missing original-art output identity."
+  ],
+  "latest_verification": {
+    "verified_at_utc": "2026-09-24T20:09:48.926549+00:00",
+    "tests_run": 126,
+    "passed": 126,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "room_verification.json"
+  },
+  "successful_behavior_golden_tests": [
+    "test_rig.RigRegressionTests.test_original_rgba_scene_pixels_include_parent_and_substeps",
+    "test_rig.RigRegressionTests.test_supplied_probe_logs_affine_only",
+    "test_motion_regressions.PunchMigrationTests.test_gpt_pixels_match_original_temporal_and_camera_formulas",
+    "test_motion_regressions.MeshAndTimingMigrationTests.test_mesh_pixels_match_original_row_warp",
+    "test_camera_regressions.GlobeScatterFloorRegressionTests.test_globe_cloud_and_rim_exact_original",
+    "test_camera_regressions.GlobeScatterFloorRegressionTests.test_floor_stagger_and_integer_scroll_original_exact",
+    "test_secondary_regressions.SecondaryRegressionTests.test_steam_motion_matches_source_default"
+  ]
+}

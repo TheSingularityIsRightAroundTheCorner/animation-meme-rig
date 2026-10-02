@@ -1,0 +1,92 @@
+{
+  "archives": [
+    {
+      "name": "GPT.zip",
+      "bytes": 49068,
+      "sha256": "434d2c5bc7afee083604020b191b0504dc35da05a136398622ec0ecfa343c2a0",
+      "entries": 42
+    },
+    {
+      "name": "CLAUDE.zip",
+      "bytes": 46360,
+      "sha256": "03f4785e9dd458b2d685d77b10bf4f8a25cb31d95a803fa7a79c9ea7d745a9fd",
+      "entries": 34
+    }
+  ],
+  "content_summary": {
+    ".py": 24,
+    ".json": 12,
+    ".md": 4,
+    ".zip": 1,
+    ".png": 0,
+    ".gif": 0,
+    ".mp4": 0
+  },
+  "outputs": [
+    {
+      "path": "gpt/claw_turn_knuckle_rig_probe.json",
+      "type": "numeric_probe_log",
+      "frames": 52,
+      "columns": [
+        "frame",
+        "front_claw_joint@hand_front",
+        "front_claw_joint@front_claw1",
+        "side_claw_joint@hand_side",
+        "side_claw_joint@side_claw1"
+      ]
+    },
+    {
+      "path": "gpt/cut37_parent_child_force_v3_probe.json",
+      "type": "numeric_probe_log",
+      "frames": 28,
+      "columns": [
+        "frame",
+        "gpt_force@gpt_catch_arm",
+        "claude_caught_arm@claude_arm_attack",
+        "claw_tip_chain@claude_arm_attack",
+        "claw_tip_chain@claw_end_3"
+      ]
+    }
+  ],
+  "excluded_metadata": [
+    "gpt/__MACOSX/._tera_globe_params.json",
+    "gpt/__MACOSX/._run_claw_turn_knuckle_rig.py",
+    "gpt/__MACOSX/._run25d_camera_box_params.json",
+    "gpt/__MACOSX/._stadium3d_floorfix.py",
+    "gpt/__MACOSX/._punch_barrage_speedline_topmost.py",
+    "gpt/__MACOSX/._punch_barrage_speedline_pulse_v4_params.json",
+    "gpt/__MACOSX/._run_claw_catch_test.py",
+    "gpt/__MACOSX/._astra_punch_barrage_handoff.zip",
+    "gpt/__MACOSX/._build_tera_globe.py",
+    "gpt/__MACOSX/._claw_catch_parenting_test_spec.json",
+    "gpt/__MACOSX/._claw_turn_knuckle_rig_probe.json",
+    "gpt/__MACOSX/._claw_turn_knuckle_rig_spec.json",
+    "gpt/__MACOSX/._cut37_parent_child_force_v3_probe.json",
+    "gpt/__MACOSX/._cut37_parent_child_force_v3_spec.json",
+    "gpt/__MACOSX/._mesh_dance_test.py",
+    "gpt/__MACOSX/._punch_barrage_flash_v3_params.json",
+    "gpt/__MACOSX/._punch_barrage_params.json",
+    "gpt/__MACOSX/._punch_barrage_rig_v2_params.json",
+    "gpt/__MACOSX/._punch_barrage_rig_v2.py",
+    "gpt/__MACOSX/._ASTRA_HANDOFF.md",
+    "gpt/__MACOSX/._ASTRA_MASTER_HANDOFF.md",
+    "claude/__MACOSX/._build_cut87_spec (1).py",
+    "claude/__MACOSX/._build_dario_zoomout.py",
+    "claude/__MACOSX/._build_hand_turn_final (1).py",
+    "claude/__MACOSX/._build_jensen_glint.py",
+    "claude/__MACOSX/._build_pant_spec_v3.py",
+    "claude/__MACOSX/._build_pant_steam_v3.py",
+    "claude/__MACOSX/._build_punch_barrage.py",
+    "claude/__MACOSX/._build_run_shot.py",
+    "claude/__MACOSX/._floor3d.py",
+    "claude/__MACOSX/._make_cut37_v2_spec.py",
+    "claude/__MACOSX/._make_fx.py",
+    "claude/__MACOSX/._rig_tree.py",
+    "claude/__MACOSX/._sphere.py",
+    "claude/__MACOSX/._camera_move_spec.md",
+    "claude/__MACOSX/._rig_tree (1).py",
+    "claude/__MACOSX/._stadium3d.py",
+    "claude/__MACOSX/._scatter_exit (1).py"
+  ],
+  "visual_outputs_supplied": false
+}

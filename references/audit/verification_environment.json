@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-14.1.2-arm64-arm-64bit",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "opencv": "5.0.0",
+  "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "original_files_verified": 41,
+  "source_hash_changes": []
+}

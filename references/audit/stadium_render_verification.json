@@ -1,0 +1,47 @@
+{
+  "frames": 48,
+  "size": [
+    960,
+    540
+  ],
+  "duration_ms": 2880,
+  "old_render_seconds": 3.871758374996716,
+  "fixed_render_seconds": 3.5298633749989676,
+  "jpeg_png_endpoints_pixel_identical": true,
+  "supplied_gif_vs_reproduced_before": [
+    {
+      "frame": 1,
+      "mean_absolute_rgb_difference": 0.3036811985596708
+    },
+    {
+      "frame": 17,
+      "mean_absolute_rgb_difference": 0.35028677983539097
+    },
+    {
+      "frame": 48,
+      "mean_absolute_rgb_difference": 0.4791480195473251
+    }
+  ],
+  "source_sha256": {
+    "<local-downloads>/stadium_run_restaged.json": "297084783bf16a0e754aa7111e1bfc9b58c878aefdcdcaf54dfde57274423d64",
+    "<local-downloads>/stadium parts.jpg": "8c5381073eab0f784c9b6e16d71bde1bb8c1de4da5772261b46ffa568881bf9f",
+    "<local-downloads>/angle 1.png": "d15365fc121d2b05c5e53d74f14326230bf0b38bba0020e704fc110cf08c7f66",
+    "<local-downloads>/angle 2.png": "f089e6e7b3d5c97747cfa4afecad19d97ef46ab60ae3c78960eeb57f29e18979",
+    "<local-downloads>/angle 3.png": "93bb63675d0213fcb3d79fb0eaed35abfb3bbf99b4b04b4a331a5aa9f9f52b6e"
+  },
+  "unchanged": [
+    "camera endpoints",
+    "room dimensions",
+    "actor trajectory",
+    "poses",
+    "panel crops",
+    "timing"
+  ],
+  "changed": [
+    "near-plane clipping",
+    "slices: 14 to 1"
+  ],
+  "limitations": [
+    "Open-top room and white painted margins remain; actor composited on top, no z-buffer or independent second actor."
+  ]
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "path": "claude/build_cut87_spec (1).py",
+    "bytes": 6247,
+    "sha256": "52af7530670a90906ed74a562ce5ff971cc28b993f775bd49dc3d064b29fa41b",
+    "functions": [
+      "claw_drift",
+      "F",
+      "speed",
+      "wrap"
+    ],
+    "imports": [
+      "import json, math",
+      "from scatter_exit import scatter_exit"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Slow crouch \u2192 pose swap on first zoom frame \u2192 detached drift then snap (1\u20138, 68\u2013105). Authored probes and complete substep layer visibility (90\u2013109). | Convert scene constants to preset; preserve staging and parent null. `claw_drift` (38\u201347) is abandoned within this file, superseded by imported scatter at 88\u2013103. |"
+  },
+  {
+    "path": "claude/build_dario_zoomout.py",
+    "bytes": 5073,
+    "sha256": "017e5c2b74e0adce5a4f2004144ad5ac8f385a1447b4e420e6a2ccb30c7adbc8",
+    "functions": [
+      "load",
+      "snap",
+      "world",
+      "camera",
+      "flat",
+      "ease_out",
+      "push"
+    ],
+    "imports": [
+      "from PIL import Image",
+      "import numpy as np",
+      "import unicodedata, os",
+      "from pathlib import Path"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "NFC filename resolver (39\u201344), opacity/scale snap (54\u201369), measured glasses-centered crop with clamped bounds (92\u2013101), staged reveal (122\u2013145). | Keep art-specific choreography separate. Top-level image loads and output writes, obsolete 64-color per-frame palette (147\u2013153), speech-balloon art is this example's historical content, not a requirement for future shots. |"
+  },
+  {
+    "path": "claude/build_hand_turn_final (1).py",
+    "bytes": 4689,
+    "sha256": "a82b7e847da070b150e297e078ecfc0d8a736c0a047d0f6465cd185db62a53c5",
+    "functions": [
+      "F",
+      "turn",
+      "pose_back",
+      "pose_side"
+    ],
+    "imports": [
+      "import json, math"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Explicit v6 supersedes rejected v3\u2013v5 squash direction (1\u201310). Measured wrist axis/focal130/theta45 (15\u201320); hard pose swap, delayed claw extension/retraction, depth z ordering (45\u201387). | Preserve turn trajectory/pose data; promote only the finite-perspective primitive. Do not resurrect obsolete squash-only direction. Original art absent. |"
+  },
+  {
+    "path": "claude/build_jensen_glint.py",
+    "bytes": 4878,
+    "sha256": "0823738b0e5ead8901eae9e4aafbc047661f16cc0069e8c17f12081b032d4383",
+    "functions": [
+      "on_white",
+      "ease_in_out",
+      "frame"
+    ],
+    "imports": [
+      "from PIL import Image, ImageChops, ImageFilter",
+      "import numpy as np",
+      "from pathlib import Path"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "White flattening (34\u201338); lens-difference mask with per-lens row hole filling (43\u201357); darken\u2192full-bright lens\u2192authored sparkle\u2192flash (80\u2013109). | Generic glint/mask helpers plus measured preset. Keep inter-lens gap, preserve eye-white holes filled. Replace fixed split978/paths with parameters. |"
+  },
+  {
+    "path": "claude/build_pant_spec_v3.py",
+    "bytes": 2645,
+    "sha256": "f47fd07dbc06d0370eb37e0d3608721253342a5f9fc8053ea5afd35870648d6b",
+    "functions": [
+      "character_layers"
+    ],
+    "imports": [
+      "import json"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Authored 8-pose breath, hold/settle split, half-cycle character offset (17\u201332), character part transforms (35\u201343). | Preserve as data preset and adapter. Its parts are filename strings and frame layers are a list; not rig_tree's schema. Renderer for this format was not supplied. |"
+  },
+  {
+    "path": "claude/build_pant_steam_v3.py",
+    "bytes": 6668,
+    "sha256": "e2fca64df1150b9b4212964b743959f10e7fdae5fd377021d4a745c3d401bea0",
+    "functions": [
+      "load",
+      "panel_mask",
+      "line_only",
+      "place",
+      "steam_state",
+      "draw_steam",
+      "character",
+      "main"
+    ],
+    "imports": [
+      "import math",
+      "import random",
+      "import sys",
+      "from PIL import Image, ImageFilter"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Same v3 breath; configurable back steam + subtle optional front haze (2\u201310, 42\u201352), panel mask (59\u201370), steam state (103\u2013124), composition order (159\u2013176). | Extract generic secondary-motion/steam functions and data preset. Keep exact breath timings; no character-name branches in core. Original includes source-asset paths and Korean filenames. |"
+  },
+  {
+    "path": "claude/build_punch_barrage.py",
+    "bytes": 4082,
+    "sha256": "4f9dbfeece8198e06a83c8b5b7c5acc16aabb5591ed73819b4683dd36e47e77b",
+    "functions": [],
+    "imports": [
+      "import math",
+      "from PIL import Image, ImageFilter",
+      "import numpy as np"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Alternating overlapping punches (22\u201327,46), growth-driven blur and early size threshold (48\u201349,71\u201378), beyond-edge target (67\u201368), camera push (81\u201385). | GPT v4 pulse family is later candidate. Preserve Claude failure evidence and benchmark trajectory, not duplicate entire punch engine. |"
+  },
+  {
+    "path": "claude/build_run_shot.py",
+    "bytes": 3307,
+    "sha256": "1cbe9124a083336e9e4f016723ed436d98f4b322c0b19faceb88c3a07d1b7f03",
+    "functions": [],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from PIL import Image",
+      "import stadium3d as S"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "42-frame dolly/fov/bob (9\u201337), sorted sliced room panels (42\u201351), pose swaps at40/72% + camera-facing billboard (53\u201360). | Store scene profile. Textured floor canonical is subject to GPT floorfix. Rendering runner after all room geometry is an intentional shot convenience, not general occlusion. |"
+  },
+  {
+    "path": "claude/camera_move_spec.md",
+    "bytes": 9833,
+    "sha256": "ef3ca212795f9b9fcedb288e7173ae147384cb3a24a6725b678b2e3693f9d6d3",
+    "disposition": "merge",
+    "migration_evidence": "Shared camera vocabulary, guide rectangles, xywh units (10\u201322), spacing/blur (44\u201371), alpha/canvas/NFD defects (154\u2013157), explicit layer order/blends (163\u2013190), QA rules (194\u2013222). | Reference plus validated adapter/schema. Text \u201calmost always screen\u201d is a shot heuristic, not a safe universal rendering default. Historical instruction to change every prior script (230) is not an audit instruction. |"
+  },
+  {
+    "path": "claude/floor3d.py",
+    "bytes": 2945,
+    "sha256": "63da01f6e685f1adfcbf607e293c901419eef84c2dea86470a4a7ed7fd4042e3",
+    "functions": [
+      "draw_floor",
+      "floor_gif",
+      "y_of",
+      "x_of",
+      "shade"
+    ],
+    "imports": [
+      "import math",
+      "from PIL import Image, ImageDraw"
+    ],
+    "disposition": "canonical",
+    "migration_evidence": "Perspective plank floor, fixed lane stagger prevents tile appearance (33\u201348), receding/fading seams (50\u201360), periodic scroll (64\u201369). | Optional procedural geometry/diagnostic helper; do not silently substitute it for the author's authored texture floor. Preserve defaults. |"
+  },
+  {
+    "path": "claude/make_cut37_v2_spec.py",
+    "bytes": 4481,
+    "sha256": "86f657c50e96a9bb55f1c9ca231dd8606460fe8f8402aa768beb668bba803bab",
+    "functions": [
+      "lerp",
+      "ease",
+      "F"
+    ],
+    "imports": [
+      "import json, random, shutil, os"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Measured parent hierarchy and shared grab pivot (9\u201332); two-frame jitter holds (64\u201374); attachment probes (78\u201379). | GPT cut37 force-v3 is later candidate; preserve this as historical recipe/control. Top-level copies every uploaded PNG: never import as library. |"
+  },
+  {
+    "path": "claude/make_fx.py",
+    "bytes": 1921,
+    "sha256": "36bb100afb408edf956438bbe2f6d5223385896059b40e5e23ace90a263dd082",
+    "functions": [
+      "radial",
+      "horizontal",
+      "flash"
+    ],
+    "imports": [
+      "from PIL import Image, ImageDraw",
+      "import math, random, os"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Deterministic radial/horizontal procedural strokes and white flash. Width/zoom (1\u20133,14,26) documents failure fix. | Keep optional geometry utility or example; do not generate replacement character art. Import currently creates directory and writes ten images (6,36\u201340). |"
+  },
+  {
+    "path": "claude/rig_tree (1).py",
+    "bytes": 7129,
+    "sha256": "0e32a4914230c124c7a9e6d25741a8740fb1aad3412dd6dac5cf0c3877b1bfbc",
+    "functions": [
+      "T",
+      "R",
+      "S",
+      "local_matrix",
+      "world_matrices",
+      "turn_matrix",
+      "apply_homography",
+      "lerp",
+      "ease_out",
+      "render",
+      "world",
+      "compose"
+    ],
+    "imports": [
+      "import json, math, sys",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Exact duplicate of `rig_tree.py`: SHA256 prefix `0e32a4914230c124`, verified byte comparison. | Preserve original in source archive only; no second installed module. |"
+  },
+  {
+    "path": "claude/rig_tree.py",
+    "bytes": 7129,
+    "sha256": "0e32a4914230c124c7a9e6d25741a8740fb1aad3412dd6dac5cf0c3877b1bfbc",
+    "functions": [
+      "T",
+      "R",
+      "S",
+      "local_matrix",
+      "world_matrices",
+      "turn_matrix",
+      "apply_homography",
+      "lerp",
+      "ease_out",
+      "render",
+      "world",
+      "compose"
+    ],
+    "imports": [
+      "import json, math, sys",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Header records v3 perspective turn, v2.2 anisotropic scale/z, v2.1 blur, v2 parent override (4\u20138); local/world affine inheritance (44\u201373), finite-camera turn (76\u201395), per-frame z (127\u2013135), full-scene substeps (140\u2013148). | Retain these semantics in shared rig. Header title still says v2, but implemented history reaches v3. Compare GPT primitive variants before declaring final rig canonical. |"
+  },
+  {
+    "path": "claude/scatter_exit (1).py",
+    "bytes": 2147,
+    "sha256": "f51d8f4f78a710dede135c6a0075e7bb6c7708cc3a55452f61b0e254530b118e",
+    "functions": [
+      "_pose",
+      "scatter_exit"
+    ],
+    "imports": [
+      "import math"
+    ],
+    "disposition": "canonical",
+    "migration_evidence": "Only supplied independent generic drift/snap transform generator. Direction includes the art's askew angle (13\u201315); uniform spacing phases plus substeps (17\u201343). | Install once as `scatter_exit.py`; filename currently prevents `from scatter_exit import scatter_exit` in cut87. Preserve angular coupling and end position. |"
+  },
+  {
+    "path": "claude/sphere.py",
+    "bytes": 3786,
+    "sha256": "90fd92e7d189f2fd1828bf0aa9adfd18ed6d84c7a6eb2fda34ab59b17e7008d4",
+    "functions": [
+      "equirect_from_robinson",
+      "_sample",
+      "render_globe",
+      "spin_gif"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "canonical",
+    "migration_evidence": "Equirectangular inverse mapping, Lambert shading, optional rim, separately moving alpha clouds (33\u201376). | Preserve globe mapping math. `equirect_from_robinson` (14\u201330) is a brightness-threshold approximation, not an exact geographic projection. Pair with GPT's measured map/texture adapter if relevant. |"
+  },
+  {
+    "path": "claude/stadium3d.py",
+    "bytes": 4282,
+    "sha256": "8f53906b54fcaf3ac66fd6aed9e39f1c9ddcfaca123039297fc6bfed89db63b6",
+    "functions": [
+      "load_panels",
+      "look_at",
+      "project",
+      "homography",
+      "draw_quad",
+      "strips",
+      "billboard"
+    ],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "`look_at`, project, homography, quad warp, slices, billboard (33\u201399). Slices explicitly fix entire floor disappearing on near-camera crossing (72\u201375). | GPT `stadium3d_floorfix.py` must decide final textured floor path. Replace scene hardcodes `NET` and `PANELS` (14\u201321) with caller configuration while retaining a provenance preset. |",
+    "post_art_review": "2026-09-25: camera/UV/billboard inherited; coarse corner rejection replaced with true near clipping after original-art reproduction. stadium_run crops selected against original sheet."
+  },
+  {
+    "path": "gpt/ASTRA_HANDOFF.md",
+    "bytes": 1362,
+    "sha256": "c991f959188ea304e52f4197393b110a224b266f11658f40a9a5066a1fde64bf",
+    "disposition": "example-only",
+    "migration_evidence": "Provenance and rule evidence | 3-10 reports working punch behavior; 14-25 records behind-fist speed-line error and correction. |"
+  },
+  {
+    "path": "gpt/ASTRA_MASTER_HANDOFF.md",
+    "bytes": 13286,
+    "sha256": "b4000856525f37149036193e90bb0cc3462d3d2d92c036fdfa698a55a2f7f9ee",
+    "disposition": "example-only",
+    "migration_evidence": "Failure register, desired architecture and unresolved limitations | Contains requested improvements as well as claims of past success. Do not represent all proposed capabilities as already implemented. |"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/ASTRA_HANDOFF.md",
+    "bytes": 1362,
+    "sha256": "c991f959188ea304e52f4197393b110a224b266f11658f40a9a5066a1fde64bf",
+    "disposition": "obsolete",
+    "migration_evidence": "Duplicate documentation | Exact byte duplicate verified. |"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/punch_barrage_params.json",
+    "bytes": 848,
+    "sha256": "4efabaf9c530249b155f824515f4a0212173428b27db1b1f5ede173c19fb0cf9",
+    "keys": [
+      "canvas",
+      "fps",
+      "preset",
+      "punch",
+      "shoulders",
+      "body",
+      "motion_blur",
+      "camera",
+      "speedline"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Duplicate preset | Exact byte duplicate verified. |"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff/punch_barrage_speedline_topmost.py",
+    "bytes": 10013,
+    "sha256": "380956346308bc01b8e1369e4ef967bec66150b64a69498657759deb0bd2aa52",
+    "functions": [
+      "clamp01",
+      "ease_in",
+      "ease_out",
+      "lerp",
+      "load_params",
+      "build_speedline_overlay",
+      "pulse_strength",
+      "main",
+      "render_fractional"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import json",
+      "import math",
+      "import subprocess",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Duplicate of canonical candidate | Exact byte duplicate verified. |"
+  },
+  {
+    "path": "gpt/astra_punch_barrage_handoff.zip",
+    "bytes": 5269,
+    "sha256": "5e0650da370de410fd03bbabd02af59d62f6be5c595fc259dce0e2ac368ec7cb",
+    "disposition": "obsolete",
+    "migration_evidence": "Immutable source archive only | Three members; all equal outer counterparts byte-for-byte; timestamps 2026-09-23 18:15:16. |"
+  },
+  {
+    "path": "gpt/build_tera_globe.py",
+    "bytes": 331,
+    "sha256": "5ecace34e1f4ef0ae94bf68f3f4c249e3757ee32e4ecbfee47b2f916f4dfc000",
+    "functions": [],
+    "imports": [],
+    "disposition": "obsolete",
+    "migration_evidence": "Historical intent only | Eight comments, no implementation. |"
+  },
+  {
+    "path": "gpt/claw_catch_parenting_test_spec.json",
+    "bytes": 26410,
+    "sha256": "10a08f9f954ee3817c4518595051a9c117abb1cae3c8cdca9c4cfb90c115c70e",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Early catch sequence and hierarchy fixture | 24 frames, 12 parts; attack arm changes parent at zero-based frame 16 (line 909). No rendered output/probe file. |"
+  },
+  {
+    "path": "gpt/claw_turn_knuckle_rig_probe.json",
+    "bytes": 15484,
+    "sha256": "29782c2bc7cb2f60c19e9f8b3eddf06094088989cf51f6f3665cf5586ace2a0e",
+    "keys": "list",
+    "disposition": "example-only",
+    "migration_evidence": "Affine anchor-coincidence output fixture | 52 records; front and side anchor pair errors zero. Does not include projective effects. |"
+  },
+  {
+    "path": "gpt/claw_turn_knuckle_rig_spec.json",
+    "bytes": 59503,
+    "sha256": "33b2fd5744c6f2686b75edaddea98495925c51bdeb3ffbd679b90ba5f4cac1b1",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Staggered anchored extension, finite turn and authored side pose | 52 frames,8 parts; wrist `[111,56]`, focal420, theta0\u2192-78; front-to-side swap at frame27. No dynamic z field, no transition alignment correction. |"
+  },
+  {
+    "path": "gpt/cut37_parent_child_force_v3_probe.json",
+    "bytes": 8616,
+    "sha256": "ff2e1b374f752c83ddabff601835e4df3a9cae91672165dde0fe3745f4c62ae4",
+    "keys": "list",
+    "disposition": "example-only",
+    "migration_evidence": "Numerical output fixture | 28 records; contact error exactly zero from frame17 onward; arm/claw chain error zero all frames. Values rounded to one decimal, so use appropriate comparison tolerance. |"
+  },
+  {
+    "path": "gpt/cut37_parent_child_force_v3_spec.json",
+    "bytes": 35348,
+    "sha256": "9a7915a74ebca8aff23a7effc79625f4fba53878b4606fbf983376f40519130f",
+    "keys": [
+      "base_dir",
+      "out",
+      "out_size",
+      "bg",
+      "parts",
+      "frames",
+      "probes"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Most complete supplied catch-force shot spec | 28 frames,13 parts; reparent at frame17 (1074); arm local dx/dy/rot become zero; caught body may move independently. |"
+  },
+  {
+    "path": "gpt/mesh_dance_test.py",
+    "bytes": 9088,
+    "sha256": "ddd58e78e91a03df4e252e16590c816ea50412d7d5f350cc8f741f43835b4825",
+    "functions": [
+      "load_poses",
+      "warp_rgba",
+      "bump",
+      "gauss",
+      "motion_params",
+      "rgba_on_white"
+    ],
+    "imports": [
+      "from PIL import Image",
+      "import numpy as np",
+      "import cv2",
+      "import math",
+      "import statistics",
+      "import subprocess",
+      "from pathlib import Path"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Row warp, exact secondary-motion presets, fractional beat boundaries and example sequence | 87-108 warp; 119-244 presets; 247-273 sequence/timing. Import-time rendering and fixed paths must be removed; first-frame palette 328-331 must be replaced. |"
+  },
+  {
+    "path": "gpt/punch_barrage_flash_v3_params.json",
+    "bytes": 533,
+    "sha256": "858ddf4ddd65241ec08f70e71e9ca87b88cc8ad9f1d985c84296530102b3a6c2",
+    "keys": [
+      "canvas",
+      "fps",
+      "frames",
+      "effect_source",
+      "effect",
+      "notes"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Failure fixture/documentation, never production default | 9,12 explicitly request full-screen flashing; superseded by line-only pulse. |"
+  },
+  {
+    "path": "gpt/punch_barrage_params.json",
+    "bytes": 848,
+    "sha256": "4efabaf9c530249b155f824515f4a0212173428b27db1b1f5ede173c19fb0cf9",
+    "keys": [
+      "canvas",
+      "fps",
+      "preset",
+      "punch",
+      "shoulders",
+      "body",
+      "motion_blur",
+      "camera",
+      "speedline"
+    ],
+    "disposition": "canonical",
+    "migration_evidence": "Heavy punch preset | 8-14 timing/perspective; 25-34 brace/substeps/camera; 36-49 topmost 0.5s pulse. `enabled` and `z_order` currently not read by Python. |"
+  },
+  {
+    "path": "gpt/punch_barrage_rig_v2.py",
+    "bytes": 501,
+    "sha256": "3c342a019de81d7d43fb07318d956793af31a1cc43df132d9e0cdd8f340c4113",
+    "functions": [],
+    "imports": [],
+    "disposition": "obsolete",
+    "migration_evidence": "Historical note only | All 12 lines are comments; executable said to exist only in prior conversation. |"
+  },
+  {
+    "path": "gpt/punch_barrage_rig_v2_params.json",
+    "bytes": 640,
+    "sha256": "bad4e686f0cb86a84ea2bb6705da4921ac0a874a28e22c54e8cb74d7c761aedf",
+    "keys": [
+      "canvas",
+      "fps",
+      "punches",
+      "step_frames",
+      "punch_duration_frames",
+      "substeps",
+      "shoulders",
+      "fist_order",
+      "notes"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Exact fist order into heavy preset, then archive duplicate schema | 21-25 order 1,3,2,4; timing matches final. |"
+  },
+  {
+    "path": "gpt/punch_barrage_speedline_pulse_v4_params.json",
+    "bytes": 640,
+    "sha256": "05ffed7104c40800974e4db08abd6671f1a2793a51a6db61241f89ee61bbd039",
+    "keys": [
+      "preset",
+      "fps",
+      "duration_sec",
+      "punches",
+      "punch_step_frames",
+      "punch_duration_frames",
+      "motion_blur",
+      "speedline",
+      "body"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Proven pulse envelope and no-flash regression evidence | 12-24 duplicates final preset; absolute effect path absent; no matching v4 executable supplied. |"
+  },
+  {
+    "path": "gpt/punch_barrage_speedline_topmost.py",
+    "bytes": 10013,
+    "sha256": "380956346308bc01b8e1369e4ef967bec66150b64a69498657759deb0bd2aa52",
+    "functions": [
+      "clamp01",
+      "ease_in",
+      "ease_out",
+      "lerp",
+      "load_params",
+      "build_speedline_overlay",
+      "pulse_strength",
+      "main",
+      "render_fractional"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import json",
+      "import math",
+      "import subprocess",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from PIL import Image"
+    ],
+    "disposition": "canonical",
+    "migration_evidence": "Shared punch renderer; extract configuration and remove CLI duplication | 63-94 line extraction/pulse; 116-154 timing/brace; 158-228 rendering; 230-252 temporal samples; 256-290 palette. Not asset-neutral yet: hardcoded fist side/centroid 130-135. |"
+  },
+  {
+    "path": "gpt/run25d_camera_box_params.json",
+    "bytes": 624,
+    "sha256": "db83e72fb8f172a28781eb06e88951cd455105d604a2ae7b656002ee524a0f32",
+    "keys": [
+      "source_basis",
+      "frames",
+      "frame_ms",
+      "camera_start",
+      "camera_end",
+      "pose_swap",
+      "room",
+      "background"
+    ],
+    "disposition": "example-only",
+    "migration_evidence": "Explicit camera endpoints and pose schedule | 5-29 start/end; 31-34 schedule .4/.72; source basis `build_run_shot(1).py` absent under that name. |"
+  },
+  {
+    "path": "gpt/run_claw_catch_test.py",
+    "bytes": 393,
+    "sha256": "abceae435c5f01a597575d1710ec0d0d637c58072c3aacf5851c2adf4552ef86",
+    "functions": [],
+    "imports": [
+      "import json, importlib.util"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Replace with shared CLI against preserved example spec | 3-4 hardcoded missing `/mnt/data/rig_tree(2).py` and spec path. |"
+  },
+  {
+    "path": "gpt/run_claw_turn_knuckle_rig.py",
+    "bytes": 385,
+    "sha256": "01c246943e8e03d52b34eb08979619b5b42ec3cfdc58791447b1e4b5ebabb6e6",
+    "functions": [],
+    "imports": [
+      "import json, importlib.util"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Replace with shared CLI against preserved example spec | 4-5 missing hardcoded engine/spec paths. |"
+  },
+  {
+    "path": "gpt/stadium3d_floorfix.py",
+    "bytes": 3460,
+    "sha256": "fdbe99e6ffd554421c2159dfb4a4c91f4a663665128a4d66b64b3c80236e5a02",
+    "functions": [
+      "_crop",
+      "load_panels",
+      "look_at",
+      "_project",
+      "draw_quad",
+      "strips",
+      "billboard"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import cv2",
+      "from PIL import Image"
+    ],
+    "disposition": "obsolete",
+    "migration_evidence": "Correct panel crops plus shared projection/quad/billboard functions | 23-30 center wood floor vs near crowd; 34-81 camera/project/quad; 83-130 strips/billboard. Hardcoded crops remain a shot preset, not automatic panel inference. |",
+    "initial_disposition": "merge",
+    "post_art_review": "2026-09-25: supplied sheet rejects wide crop rectangles; non-clipped projector also drops visible walls. Keep source only as historical reference; use stadium_run plus canonical near clipping."
+  },
+  {
+    "path": "gpt/tera_globe_params.json",
+    "bytes": 351,
+    "sha256": "3898138602015c4759cdbe33bdc8d266a6ab4fac481c784ad57f30ca571101fa",
+    "keys": [
+      "engine",
+      "land",
+      "cloud",
+      "size",
+      "frames",
+      "fps",
+      "light",
+      "ambient",
+      "rim",
+      "cloud_opacity",
+      "cloud_relative_speed",
+      "projection"
+    ],
+    "disposition": "merge",
+    "migration_evidence": "Globe preset used with supplied Claude sphere engine | 8-16 lighting, cloud opacity and 1.12 relative speed; source textures absent. |"
+  }
+]

@@ -1,0 +1,534 @@
+[
+  {
+    "frame": 0,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 1,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 2,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 3,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 4,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 5,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 6,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 7,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 8,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 9,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      287.0,
+      261.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      182.0,
+      260.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      182.0,
+      260.0
+    ]
+  },
+  {
+    "frame": 10,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      273.1,
+      262.3
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      168.1,
+      261.3
+    ],
+    "claw_tip_chain@claw_end_3": [
+      168.1,
+      261.3
+    ]
+  },
+  {
+    "frame": 11,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      262.7,
+      263.3
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      157.7,
+      262.3
+    ],
+    "claw_tip_chain@claw_end_3": [
+      157.7,
+      262.3
+    ]
+  },
+  {
+    "frame": 12,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      255.3,
+      264.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      150.3,
+      263.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      150.3,
+      263.0
+    ]
+  },
+  {
+    "frame": 13,
+    "gpt_force@gpt_catch_arm": [
+      227.0,
+      283.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      250.2,
+      264.5
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      145.2,
+      263.5
+    ],
+    "claw_tip_chain@claw_end_3": [
+      145.2,
+      263.5
+    ]
+  },
+  {
+    "frame": 14,
+    "gpt_force@gpt_catch_arm": [
+      237.4,
+      272.6
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      247.2,
+      264.8
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      142.2,
+      263.8
+    ],
+    "claw_tip_chain@claw_end_3": [
+      142.2,
+      263.8
+    ]
+  },
+  {
+    "frame": 15,
+    "gpt_force@gpt_catch_arm": [
+      242.8,
+      267.2
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.7,
+      264.9
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.7,
+      263.9
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.7,
+      263.9
+    ]
+  },
+  {
+    "frame": 16,
+    "gpt_force@gpt_catch_arm": [
+      244.7,
+      265.3
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.1,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.1,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.1,
+      264.0
+    ]
+  },
+  {
+    "frame": 17,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 18,
+    "gpt_force@gpt_catch_arm": [
+      245.0,
+      265.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      245.0,
+      265.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      140.0,
+      264.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      140.0,
+      264.0
+    ]
+  },
+  {
+    "frame": 19,
+    "gpt_force@gpt_catch_arm": [
+      239.0,
+      263.8
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      239.0,
+      263.8
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      134.1,
+      265.5
+    ],
+    "claw_tip_chain@claw_end_3": [
+      134.1,
+      265.5
+    ]
+  },
+  {
+    "frame": 20,
+    "gpt_force@gpt_catch_arm": [
+      234.4,
+      262.9
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      234.4,
+      262.9
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      129.5,
+      266.7
+    ],
+    "claw_tip_chain@claw_end_3": [
+      129.5,
+      266.7
+    ]
+  },
+  {
+    "frame": 21,
+    "gpt_force@gpt_catch_arm": [
+      230.9,
+      262.2
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      230.9,
+      262.2
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      126.1,
+      267.6
+    ],
+    "claw_tip_chain@claw_end_3": [
+      126.1,
+      267.6
+    ]
+  },
+  {
+    "frame": 22,
+    "gpt_force@gpt_catch_arm": [
+      228.4,
+      261.7
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      228.4,
+      261.7
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      123.6,
+      268.3
+    ],
+    "claw_tip_chain@claw_end_3": [
+      123.6,
+      268.3
+    ]
+  },
+  {
+    "frame": 23,
+    "gpt_force@gpt_catch_arm": [
+      226.8,
+      261.4
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      226.8,
+      261.4
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      122.0,
+      268.7
+    ],
+    "claw_tip_chain@claw_end_3": [
+      122.0,
+      268.7
+    ]
+  },
+  {
+    "frame": 24,
+    "gpt_force@gpt_catch_arm": [
+      225.7,
+      261.1
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      225.7,
+      261.1
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      121.0,
+      269.0
+    ],
+    "claw_tip_chain@claw_end_3": [
+      121.0,
+      269.0
+    ]
+  },
+  {
+    "frame": 25,
+    "gpt_force@gpt_catch_arm": [
+      225.2,
+      261.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      225.2,
+      261.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      120.5,
+      269.1
+    ],
+    "claw_tip_chain@claw_end_3": [
+      120.5,
+      269.1
+    ]
+  },
+  {
+    "frame": 26,
+    "gpt_force@gpt_catch_arm": [
+      225.0,
+      261.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      225.0,
+      261.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      120.3,
+      269.1
+    ],
+    "claw_tip_chain@claw_end_3": [
+      120.3,
+      269.1
+    ]
+  },
+  {
+    "frame": 27,
+    "gpt_force@gpt_catch_arm": [
+      225.0,
+      261.0
+    ],
+    "claude_caught_arm@claude_arm_attack": [
+      225.0,
+      261.0
+    ],
+    "claw_tip_chain@claude_arm_attack": [
+      120.3,
+      269.2
+    ],
+    "claw_tip_chain@claw_end_3": [
+      120.3,
+      269.2
+    ]
+  }
+]

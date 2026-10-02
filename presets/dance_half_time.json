@@ -1,0 +1,102 @@
+{
+  "preset": "dance_half_time",
+  "canvas": [
+    540,
+    960
+  ],
+  "fps": 30,
+  "bpm": 189.9,
+  "beats_per_pose": 2.0,
+  "preserve_baselines": [],
+  "sequence": [
+    [
+      1,
+      "shakeR",
+      1.0
+    ],
+    [
+      2,
+      "clapR",
+      1.0
+    ],
+    [
+      3,
+      "shakeL",
+      1.0
+    ],
+    [
+      4,
+      "clapL",
+      1.0
+    ],
+    [
+      5,
+      "cross",
+      1.0
+    ],
+    [
+      6,
+      "pulse",
+      1.0
+    ],
+    [
+      12,
+      "breathe",
+      1.0
+    ],
+    [
+      13,
+      "pop",
+      1.0
+    ],
+    [
+      8,
+      "leanR",
+      1.0
+    ],
+    [
+      9,
+      "reachR",
+      1.0
+    ],
+    [
+      10,
+      "leanL",
+      1.0
+    ],
+    [
+      11,
+      "reachL",
+      1.0
+    ],
+    [
+      7,
+      "final",
+      1.0
+    ],
+    [
+      9,
+      "waveR",
+      1.0
+    ],
+    [
+      11,
+      "waveL",
+      1.0
+    ],
+    [
+      9,
+      "waveR",
+      1.0
+    ],
+    [
+      11,
+      "waveL",
+      1.0
+    ]
+  ],
+  "provenance": {
+    "source": "GPT mesh_dance_test.py",
+    "status": "exact inherited motion curves, sequence and absolute timing; original13 PNGs absent"
+  }
+}

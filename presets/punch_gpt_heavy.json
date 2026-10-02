@@ -1,0 +1,91 @@
+{
+  "canvas": [
+    768,
+    432
+  ],
+  "fps": 30,
+  "preset": "gpt_heavy_barrage",
+  "punch": {
+    "count": 10,
+    "step_frames": 3.0,
+    "duration_frames": 6.5,
+    "perspective_scale": 8.9,
+    "end_overshoot": 1.85
+  },
+  "shoulders": {
+    "L": [
+      300,
+      190
+    ],
+    "R": [
+      455,
+      190
+    ]
+  },
+  "body": {
+    "max_horizontal_brace_px": 0.7,
+    "max_vertical_brace_px": 1.4
+  },
+  "motion_blur": {
+    "type": "temporal_substeps",
+    "substeps": 4,
+    "shutter": 0.7
+  },
+  "camera": {
+    "zoom_end": 0.78
+  },
+  "speedline": {
+    "enabled": true,
+    "z_order": "topmost",
+    "pulse_interval_sec": 0.5,
+    "visible_envelope_frames": [
+      0.25,
+      0.75,
+      1.0,
+      0.55,
+      0.18
+    ],
+    "full_screen_flash": false,
+    "canonical_rule": "Composite speed lines LAST, above body, fists, glow, and overlays."
+  },
+  "fists": [
+    {
+      "side": "L",
+      "centroid": [
+        42,
+        48
+      ]
+    },
+    {
+      "side": "R",
+      "centroid": [
+        250,
+        149
+      ]
+    },
+    {
+      "side": "L",
+      "centroid": [
+        37,
+        141
+      ]
+    },
+    {
+      "side": "R",
+      "centroid": [
+        268,
+        38
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "GPT punch_barrage_speedline_topmost.py + punch_barrage_params.json",
+    "status": "source-equivalent",
+    "asset_order": [
+      "fist_1",
+      "fist_3",
+      "fist_2",
+      "fist_4"
+    ]
+  }
+}

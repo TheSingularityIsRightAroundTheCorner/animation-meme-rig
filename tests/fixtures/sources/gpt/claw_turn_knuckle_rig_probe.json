@@ -1,0 +1,990 @@
+[
+  {
+    "frame": 0,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 1,
+    "front_claw_joint@hand_front": [
+      93.4,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      93.4,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 2,
+    "front_claw_joint@hand_front": [
+      99.0,
+      117.2
+    ],
+    "front_claw_joint@front_claw1": [
+      99.0,
+      117.2
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 3,
+    "front_claw_joint@hand_front": [
+      107.5,
+      117.3
+    ],
+    "front_claw_joint@front_claw1": [
+      107.5,
+      117.3
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 4,
+    "front_claw_joint@hand_front": [
+      118.4,
+      117.6
+    ],
+    "front_claw_joint@front_claw1": [
+      118.4,
+      117.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 5,
+    "front_claw_joint@hand_front": [
+      131.0,
+      117.9
+    ],
+    "front_claw_joint@front_claw1": [
+      131.0,
+      117.9
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 6,
+    "front_claw_joint@hand_front": [
+      144.5,
+      118.2
+    ],
+    "front_claw_joint@front_claw1": [
+      144.5,
+      118.2
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 7,
+    "front_claw_joint@hand_front": [
+      158.3,
+      118.6
+    ],
+    "front_claw_joint@front_claw1": [
+      158.3,
+      118.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 8,
+    "front_claw_joint@hand_front": [
+      171.9,
+      119.0
+    ],
+    "front_claw_joint@front_claw1": [
+      171.9,
+      119.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 9,
+    "front_claw_joint@hand_front": [
+      184.7,
+      119.3
+    ],
+    "front_claw_joint@front_claw1": [
+      184.7,
+      119.3
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 10,
+    "front_claw_joint@hand_front": [
+      196.4,
+      119.6
+    ],
+    "front_claw_joint@front_claw1": [
+      196.4,
+      119.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 11,
+    "front_claw_joint@hand_front": [
+      206.7,
+      119.8
+    ],
+    "front_claw_joint@front_claw1": [
+      206.7,
+      119.8
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 12,
+    "front_claw_joint@hand_front": [
+      215.5,
+      120.0
+    ],
+    "front_claw_joint@front_claw1": [
+      215.5,
+      120.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 13,
+    "front_claw_joint@hand_front": [
+      222.8,
+      120.0
+    ],
+    "front_claw_joint@front_claw1": [
+      222.8,
+      120.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 14,
+    "front_claw_joint@hand_front": [
+      228.5,
+      120.0
+    ],
+    "front_claw_joint@front_claw1": [
+      228.5,
+      120.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 15,
+    "front_claw_joint@hand_front": [
+      232.9,
+      119.8
+    ],
+    "front_claw_joint@front_claw1": [
+      232.9,
+      119.8
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 16,
+    "front_claw_joint@hand_front": [
+      236.1,
+      119.6
+    ],
+    "front_claw_joint@front_claw1": [
+      236.1,
+      119.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 17,
+    "front_claw_joint@hand_front": [
+      238.3,
+      119.3
+    ],
+    "front_claw_joint@front_claw1": [
+      238.3,
+      119.3
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 18,
+    "front_claw_joint@hand_front": [
+      239.8,
+      119.0
+    ],
+    "front_claw_joint@front_claw1": [
+      239.8,
+      119.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 19,
+    "front_claw_joint@hand_front": [
+      240.6,
+      118.6
+    ],
+    "front_claw_joint@front_claw1": [
+      240.6,
+      118.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 20,
+    "front_claw_joint@hand_front": [
+      241.1,
+      118.2
+    ],
+    "front_claw_joint@front_claw1": [
+      241.1,
+      118.2
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 21,
+    "front_claw_joint@hand_front": [
+      241.4,
+      117.9
+    ],
+    "front_claw_joint@front_claw1": [
+      241.4,
+      117.9
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 22,
+    "front_claw_joint@hand_front": [
+      241.5,
+      117.6
+    ],
+    "front_claw_joint@front_claw1": [
+      241.5,
+      117.6
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 23,
+    "front_claw_joint@hand_front": [
+      241.5,
+      117.3
+    ],
+    "front_claw_joint@front_claw1": [
+      241.5,
+      117.3
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 24,
+    "front_claw_joint@hand_front": [
+      241.5,
+      117.2
+    ],
+    "front_claw_joint@front_claw1": [
+      241.5,
+      117.2
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 25,
+    "front_claw_joint@hand_front": [
+      241.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      241.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 26,
+    "front_claw_joint@hand_front": [
+      241.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      241.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 27,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 28,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 29,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 30,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 31,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 32,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 33,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 34,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 35,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 36,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 37,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 38,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 39,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 40,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 41,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 42,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 43,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 44,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 45,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 46,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 47,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 48,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 49,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 50,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  },
+  {
+    "frame": 51,
+    "front_claw_joint@hand_front": [
+      91.5,
+      117.0
+    ],
+    "front_claw_joint@front_claw1": [
+      91.5,
+      117.0
+    ],
+    "side_claw_joint@hand_side": [
+      277.0,
+      130.0
+    ],
+    "side_claw_joint@side_claw1": [
+      277.0,
+      130.0
+    ]
+  }
+]

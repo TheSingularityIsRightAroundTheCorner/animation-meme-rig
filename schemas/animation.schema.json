@@ -1,0 +1,1620 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:animation-meme-rig:scene:v1",
+  "title": "Animation Meme Rig expanded scene v1",
+  "description": "Validate after loading optional profile and adapting legacy rig/pant documents. Runtime validation additionally checks asset paths, canvas sizes, references, cycles, crop bounds, and unsupported alpha requests.",
+  "type": "object",
+  "required": [
+    "version",
+    "mode"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "mode": {
+      "enum": [
+        "rig",
+        "punch",
+        "mesh",
+        "globe",
+        "room",
+        "camera",
+        "pant"
+      ]
+    },
+    "profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "base_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output": {
+      "type": "string",
+      "minLength": 1
+    },
+    "out": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canvas": {
+      "$ref": "#/$defs/size"
+    },
+    "out_size": {
+      "$ref": "#/$defs/size"
+    },
+    "fps": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "frame_ms": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "bg": {
+      "$ref": "#/$defs/color"
+    },
+    "preserve_alpha": {
+      "type": "boolean"
+    },
+    "preset": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {}
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "vector3": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "rect": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "size": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "integer",
+          "minimum": 1
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "color": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 255
+      },
+      "minItems": 3,
+      "maxItems": 4
+    },
+    "blend": {
+      "enum": [
+        "normal",
+        "screen",
+        "multiply",
+        "overlay"
+      ]
+    },
+    "pulse": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "pulse_interval_sec": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "visible_envelope_frames": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "turn": {
+      "type": "object",
+      "properties": {
+        "axis_x": {
+          "type": "number"
+        },
+        "axis_y": {
+          "type": "number"
+        },
+        "theta": {
+          "type": "number"
+        },
+        "focal": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "axis_x",
+        "axis_y",
+        "theta"
+      ]
+    },
+    "matrix": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "part": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pivot": {
+          "$ref": "#/$defs/point"
+        },
+        "parent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "z": {
+          "type": "number"
+        },
+        "visible": {
+          "type": "boolean"
+        },
+        "blend": {
+          "$ref": "#/$defs/blend"
+        },
+        "anchors": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/point"
+          }
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "pivot"
+      ]
+    },
+    "camera_part": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object",
+          "properties": {
+            "file": {
+              "type": "string",
+              "minLength": 1
+            },
+            "blend": {
+              "$ref": "#/$defs/blend"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "file"
+          ]
+        }
+      ]
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "visible": {
+          "type": "boolean"
+        },
+        "rot": {
+          "type": "number"
+        },
+        "dx": {
+          "type": "number"
+        },
+        "dy": {
+          "type": "number"
+        },
+        "scale": {
+          "type": "number",
+          "not": {
+            "const": 0
+          }
+        },
+        "sx": {
+          "type": "number",
+          "not": {
+            "const": 0
+          }
+        },
+        "sy": {
+          "type": "number",
+          "not": {
+            "const": 0
+          }
+        },
+        "parent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "z": {
+          "type": "number"
+        },
+        "turn": {
+          "$ref": "#/$defs/turn"
+        },
+        "matrix": {
+          "$ref": "#/$defs/matrix"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "blend": {
+          "$ref": "#/$defs/blend"
+        }
+      },
+      "additionalProperties": false
+    },
+    "layers": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/transform"
+      }
+    },
+    "rig_frame": {
+      "type": "object",
+      "properties": {
+        "layers": {
+          "$ref": "#/$defs/layers"
+        },
+        "camera": {
+          "$ref": "#/$defs/rect"
+        },
+        "ms": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "substeps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/layers"
+          },
+          "minItems": 1
+        },
+        "camera_substeps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rect"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "probe": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "point": {
+          "$ref": "#/$defs/point"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "point",
+        "parts"
+      ]
+    },
+    "effect": {
+      "type": "object",
+      "properties": {
+        "part": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blend": {
+          "$ref": "#/$defs/blend"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "kind": {
+          "enum": [
+            "image",
+            "speedline"
+          ]
+        },
+        "pulse": {
+          "$ref": "#/$defs/pulse"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "part"
+      ]
+    },
+    "swap": {
+      "type": "object",
+      "properties": {
+        "at": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "part": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "at",
+        "part"
+      ]
+    },
+    "shot": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_start": {
+          "$ref": "#/$defs/rect"
+        },
+        "frame_end": {
+          "$ref": "#/$defs/rect"
+        },
+        "easing": {
+          "enum": [
+            "smooth",
+            "ease_in",
+            "ease_out",
+            "ease_in_out",
+            "linear",
+            "snap"
+          ]
+        },
+        "ease_power": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "frames": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "frame_ms": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "hold_in": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hold_out": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "motion_blur": {
+          "type": "boolean"
+        },
+        "blur_steps": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "overshoot": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.08
+        },
+        "exposure": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "swap": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/swap"
+          },
+          "minItems": 1
+        },
+        "screen_effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect"
+          },
+          "minItems": 0
+        },
+        "world_effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect"
+          },
+          "minItems": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "frame_start"
+      ]
+    },
+    "punch_controls": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "step_frames": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "duration_frames": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "perspective_scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "end_overshoot": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "initial_scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "ease_power": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fade_start": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "exclusiveMaximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "fist": {
+      "type": "object",
+      "properties": {
+        "side": {
+          "type": "string",
+          "minLength": 1
+        },
+        "centroid": {
+          "$ref": "#/$defs/point"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "side",
+        "centroid"
+      ]
+    },
+    "speedline": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "z_order": {
+          "enum": [
+            "topmost",
+            "background"
+          ]
+        },
+        "pulse_interval_sec": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "visible_envelope_frames": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 1
+        },
+        "full_screen_flash": {
+          "const": false
+        },
+        "canonical_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "punch_body": {
+      "type": "object",
+      "properties": {
+        "max_horizontal_brace_px": {
+          "type": "number"
+        },
+        "max_vertical_brace_px": {
+          "type": "number"
+        },
+        "horizontal_frequency": {
+          "type": "number"
+        },
+        "vertical_frequency": {
+          "type": "number"
+        },
+        "round_position": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "punch_camera": {
+      "type": "object",
+      "properties": {
+        "zoom_end": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "ease": {
+          "enum": [
+            "linear",
+            "cubic_out"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "motion_blur": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "temporal_substeps"
+        },
+        "substeps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shutter": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "mesh_row": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "enum": [
+            "none",
+            "shakeR",
+            "shakeL",
+            "clapR",
+            "clapL",
+            "cross",
+            "pulse",
+            "breathe",
+            "pop",
+            "leanR",
+            "leanL",
+            "reachR",
+            "reachL",
+            "final",
+            "waveR",
+            "waveL"
+          ]
+        },
+        {
+          "type": "number",
+          "minimum": 0
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "panel": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/rect"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "box": {
+              "$ref": "#/$defs/rect"
+            },
+            "rotation": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "box"
+          ]
+        }
+      ]
+    },
+    "camera3d": {
+      "type": "object",
+      "properties": {
+        "eye": {
+          "$ref": "#/$defs/vector3"
+        },
+        "target": {
+          "$ref": "#/$defs/vector3"
+        },
+        "fov": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 179
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "eye",
+        "target",
+        "fov"
+      ]
+    },
+    "room_pose": {
+      "type": "object",
+      "properties": {
+        "at": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "part": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "at",
+        "part"
+      ]
+    },
+    "legacy_layer": {
+      "type": "object",
+      "properties": {
+        "part": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dx": {
+          "type": "number"
+        },
+        "dy": {
+          "type": "number"
+        },
+        "rot": {
+          "type": "number"
+        },
+        "pivot": {
+          "$ref": "#/$defs/point"
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "part"
+      ]
+    },
+    "legacy_frame": {
+      "type": "object",
+      "properties": {
+        "layers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/legacy_layer"
+          },
+          "minItems": 0
+        },
+        "ms": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "layers"
+      ]
+    },
+    "breath_row": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      ],
+      "items": false,
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "breath_profile": {
+      "type": "object",
+      "properties": {
+        "breath": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/breath_row"
+          },
+          "minItems": 1
+        },
+        "neck": {
+          "$ref": "#/$defs/point"
+        },
+        "crown": {
+          "$ref": "#/$defs/point"
+        },
+        "parts": {
+          "type": "object",
+          "properties": {
+            "body1": {
+              "type": "string",
+              "minLength": 1
+            },
+            "body2": {
+              "type": "string",
+              "minLength": 1
+            },
+            "head": {
+              "type": "string",
+              "minLength": 1
+            },
+            "hair": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "body1",
+            "body2",
+            "head",
+            "hair"
+          ]
+        },
+        "phase": {
+          "type": "integer"
+        },
+        "body_ratio": {
+          "type": "number"
+        },
+        "hair_rotation_ratio": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "breath",
+        "neck",
+        "crown",
+        "parts"
+      ]
+    },
+    "steam_parameters": {
+      "type": "object",
+      "properties": {
+        "rise": {
+          "type": "number"
+        },
+        "grow": {
+          "type": "number"
+        },
+        "wobble": {
+          "type": "number"
+        },
+        "peak_opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "actor": {
+      "type": "object",
+      "properties": {
+        "profile": {
+          "$ref": "#/$defs/breath_profile"
+        },
+        "files": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "steam": {
+          "type": "string",
+          "minLength": 1
+        },
+        "side": {
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "steam_phase": {
+          "type": "number"
+        },
+        "steam_delay": {
+          "type": "number"
+        },
+        "steam_parameters": {
+          "$ref": "#/$defs/steam_parameters"
+        },
+        "mask": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "profile",
+        "files"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "rig"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "parts": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "$ref": "#/$defs/part"
+            }
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/rig_frame"
+            },
+            "minItems": 1
+          },
+          "probes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/probe"
+            },
+            "minItems": 0
+          },
+          "detach_for_control": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "parts",
+          "frames"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "punch"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assets": {
+            "type": "object",
+            "properties": {
+              "body": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fists": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "speedline": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "body",
+              "fists"
+            ]
+          },
+          "fists": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/fist"
+            },
+            "minItems": 1
+          },
+          "shoulders": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "$ref": "#/$defs/point"
+            }
+          },
+          "punch": {
+            "$ref": "#/$defs/punch_controls"
+          },
+          "body": {
+            "$ref": "#/$defs/punch_body"
+          },
+          "camera": {
+            "$ref": "#/$defs/punch_camera"
+          },
+          "motion_blur": {
+            "$ref": "#/$defs/motion_blur"
+          },
+          "speedline": {
+            "$ref": "#/$defs/speedline"
+          }
+        },
+        "required": [
+          "assets",
+          "fists",
+          "shoulders",
+          "punch"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "speedline": {
+                  "properties": {
+                    "enabled": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "enabled"
+                  ]
+                }
+              },
+              "required": [
+                "speedline"
+              ]
+            },
+            "else": {
+              "properties": {
+                "assets": {
+                  "required": [
+                    "speedline"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "mesh"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assets": {
+            "type": "object",
+            "properties": {
+              "poses": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "poses"
+            ]
+          },
+          "sequence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/mesh_row"
+            },
+            "minItems": 1
+          },
+          "bpm": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "beats_per_pose": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "offset_ms": {
+            "type": "number",
+            "default": 0,
+            "description": "First beat relative to output time zero, in milliseconds. Positive holds the initial pose; negative crops elapsed motion."
+          },
+          "preserve_baselines": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "assets",
+          "sequence"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "globe"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "land": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cloud": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "frames": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "light": {
+            "$ref": "#/$defs/vector3"
+          },
+          "ambient": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "rim": {
+            "type": "number"
+          },
+          "cloud_opacity": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "cloud_relative_speed": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "land"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "room"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "panel_sheet": {
+            "type": "string",
+            "minLength": 1
+          },
+          "panels": {
+            "type": "object",
+            "properties": {
+              "far": {
+                "$ref": "#/$defs/panel"
+              },
+              "left": {
+                "$ref": "#/$defs/panel"
+              },
+              "right": {
+                "$ref": "#/$defs/panel"
+              },
+              "near": {
+                "$ref": "#/$defs/panel"
+              },
+              "floor": {
+                "$ref": "#/$defs/panel"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "far",
+              "left",
+              "right",
+              "near",
+              "floor"
+            ]
+          },
+          "pose_files": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "frames": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "slices": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "room": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "depth": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "camera_start": {
+            "$ref": "#/$defs/camera3d"
+          },
+          "camera_end": {
+            "$ref": "#/$defs/camera3d"
+          },
+          "pose_schedule": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/room_pose"
+            },
+            "minItems": 1
+          },
+          "camera_bob": {
+            "type": "number"
+          },
+          "background": {
+            "$ref": "#/$defs/color"
+          },
+          "actor": {
+            "type": "object",
+            "properties": {
+              "strides": {
+                "type": "number"
+              },
+              "height_start": {
+                "type": "number"
+              },
+              "height_growth": {
+                "type": "number"
+              },
+              "pose_phase": {
+                "type": "number"
+              },
+              "x": {
+                "type": "number"
+              },
+              "sway": {
+                "type": "number"
+              },
+              "bob": {
+                "type": "number"
+              },
+              "z_start": {
+                "type": "number"
+              },
+              "travel": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "panel_sheet",
+          "panels",
+          "pose_files"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "camera"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "parts": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "$ref": "#/$defs/camera_part"
+            }
+          },
+          "layers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "shots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/shot"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "canvas",
+          "parts",
+          "layers",
+          "shots"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "pant"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "format": {
+            "const": "legacy_layers"
+          },
+          "background": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/actor"
+            },
+            "minItems": 1
+          },
+          "divider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "divider_background": {
+            "type": "string",
+            "minLength": 1
+          },
+          "panel": {
+            "type": "object",
+            "properties": {
+              "line_x0": {
+                "type": "number"
+              },
+              "slope": {
+                "type": "number"
+              },
+              "half": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "breaths": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "front_haze": {
+            "type": "boolean"
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "parts": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/legacy_frame"
+            },
+            "minItems": 1
+          },
+          "crop": {
+            "$ref": "#/$defs/rect"
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "actors",
+              "background"
+            ],
+            "not": {
+              "required": [
+                "format"
+              ]
+            }
+          },
+          {
+            "required": [
+              "format",
+              "parts",
+              "frames"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

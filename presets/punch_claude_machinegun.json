@@ -1,0 +1,93 @@
+{
+  "canvas": [
+    768,
+    432
+  ],
+  "fps": 25,
+  "preset": "claude_machinegun",
+  "punch": {
+    "count": 9,
+    "step_frames": 2.5,
+    "duration_frames": 5,
+    "perspective_scale": 8.5,
+    "end_overshoot": 1.75,
+    "initial_scale": 0.55,
+    "ease_power": 1.7,
+    "fade_start": null
+  },
+  "shoulders": {
+    "L": [
+      300,
+      190
+    ],
+    "R": [
+      455,
+      190
+    ]
+  },
+  "body": {
+    "max_horizontal_brace_px": 5,
+    "max_vertical_brace_px": 1.5,
+    "horizontal_frequency": 2.1,
+    "vertical_frequency": 1.7,
+    "round_position": false
+  },
+  "motion_blur": {
+    "type": "temporal_substeps",
+    "substeps": 4,
+    "shutter": 0.7
+  },
+  "camera": {
+    "zoom_end": 0.74,
+    "ease": "linear"
+  },
+  "speedline": {
+    "enabled": true,
+    "z_order": "topmost",
+    "pulse_interval_sec": 0.5,
+    "visible_envelope_frames": [
+      0.25,
+      0.75,
+      1.0,
+      0.55,
+      0.18
+    ],
+    "full_screen_flash": false,
+    "canonical_rule": "Composite speed lines LAST, above body, fists, glow, and overlays."
+  },
+  "fists": [
+    {
+      "side": "L",
+      "centroid": [
+        42,
+        48
+      ]
+    },
+    {
+      "side": "R",
+      "centroid": [
+        250,
+        149
+      ]
+    },
+    {
+      "side": "L",
+      "centroid": [
+        37,
+        141
+      ]
+    },
+    {
+      "side": "R",
+      "centroid": [
+        268,
+        38
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "Claude build_punch_barrage.py lines46-82",
+    "status": "adapted timing profile; source originally used GPT artwork",
+    "changes": "Retains original25fps,linear camera,no late fade,and integer body placement. Uses shared temporal blur and topmost line-only pulse in place of documented Gaussian/behind-lines failures. Original complete shot was not visually re-certified."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "mode": "globe",
+  "provenance": "GPT tera_globe_params.json over Claude sphere.py; caller supplies equirectangular authored textures",
+  "land": "tera land.png",
+  "cloud": "tera cloud.png",
+  "size": 520,
+  "frames": 48,
+  "frame_ms": 41.666666666666664,
+  "ambient": 0.38,
+  "light": [
+    -0.62,
+    0.28,
+    0.74
+  ],
+  "bg": [
+    18,
+    20,
+    28
+  ],
+  "rim": 0.16,
+  "cloud_opacity": 0.82,
+  "fps": 24,
+  "cloud_relative_speed": 1.12
+}

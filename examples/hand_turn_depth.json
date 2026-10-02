@@ -1,0 +1,3086 @@
+{
+  "version": 1,
+  "mode": "rig",
+  "base_dir": ".",
+  "out": "hand_turn_depth.gif",
+  "out_size": [
+    480,
+    936
+  ],
+  "provenance": "Claude hand v6 exact authored frames; finite focal130/theta45 and changing claw z; calibrate source artwork before reuse.",
+  "parts": {
+    "hand_back": {
+      "file": "hand_back.png",
+      "pivot": [
+        108.8,
+        6.0
+      ],
+      "parent": null,
+      "z": 5
+    },
+    "hand_side": {
+      "file": "hand_side.png",
+      "pivot": [
+        108.8,
+        6.0
+      ],
+      "parent": null,
+      "z": 5
+    },
+    "bc1": {
+      "file": "bc1.png",
+      "pivot": [
+        91.0,
+        153.0
+      ],
+      "parent": null,
+      "z": 10
+    },
+    "bc2": {
+      "file": "bc2.png",
+      "pivot": [
+        111.0,
+        194.0
+      ],
+      "parent": null,
+      "z": 10
+    },
+    "bc3": {
+      "file": "bc3.png",
+      "pivot": [
+        132.0,
+        187.0
+      ],
+      "parent": null,
+      "z": 10
+    },
+    "sc1": {
+      "file": "sc1.png",
+      "pivot": [
+        276.0,
+        139.0
+      ],
+      "parent": null,
+      "z": 10
+    },
+    "sc2": {
+      "file": "sc2.png",
+      "pivot": [
+        267.0,
+        199.0
+      ],
+      "parent": null,
+      "z": 10
+    },
+    "sc3": {
+      "file": "sc3.png",
+      "pivot": [
+        248.0,
+        190.0
+      ],
+      "parent": null,
+      "z": 10
+    }
+  },
+  "frames": [
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.4012345679012346,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 1.5432098765432096,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 0.802469135802469,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 1.5432098765432096,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 3.333333333333333,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 0.9876543209876543,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 3.333333333333333,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 5.679012345679012,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 5.679012345679012,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 8.487654320987657,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 8.487654320987657,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 11.666666666666666,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 0.802469135802469,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 11.666666666666666,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 11.666666666666666,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 15.123456790123457,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 0.9876543209876543,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 15.123456790123457,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 15.123456790123457,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 18.765432098765434,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 18.765432098765434,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 18.765432098765434,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 22.5,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 22.5,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 22.5,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 0.802469135802469,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 0.9876543209876543,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.33333333333333,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.33333333333333,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.33333333333333,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.33333333333333,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 45.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 45.0,
+            "focal": 130.0
+          },
+          "z": 12
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 45.0,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 45.0,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.12,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.12,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.12,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.12,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.08,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.08,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.08,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.08,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.04,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.04,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.04,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.04,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 80
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 0.31640625,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 0.0625,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 0.02,
+          "z": 12
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": false
+        },
+        "hand_side": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "z": 5
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 11
+        },
+        "sc3": {
+          "visible": true,
+          "dx": -166.5,
+          "dy": 3.0,
+          "sx": 1.0,
+          "sy": 1,
+          "z": 10
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 44.598765432098766,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 0.19753086419753096,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 43.45679012345679,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": true,
+          "sy": 0.02,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 11
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 41.66666666666667,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 39.32098765432099,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 36.51234567901234,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.333333333333336,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 1.0,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 33.333333333333336,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 0.19753086419753096,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 29.876543209876544,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": true,
+          "sy": 0.02,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 26.23456790123457,
+            "focal": 130.0
+          },
+          "z": 10
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 22.5,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 18.765432098765434,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 15.123456790123452,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 11.666666666666668,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 8.487654320987657,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 5.679012345679012,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 3.3333333333333326,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 1.5432098765432112,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.40123456790123496,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 60
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    },
+    {
+      "layers": {
+        "hand_back": {
+          "visible": true,
+          "turn": {
+            "axis_x": 108.8,
+            "axis_y": 6.0,
+            "theta": 0.0,
+            "focal": 130.0
+          },
+          "z": 5
+        },
+        "hand_side": {
+          "visible": false
+        },
+        "bc1": {
+          "visible": false
+        },
+        "bc2": {
+          "visible": false
+        },
+        "bc3": {
+          "visible": false
+        },
+        "sc1": {
+          "visible": false
+        },
+        "sc2": {
+          "visible": false
+        },
+        "sc3": {
+          "visible": false
+        }
+      },
+      "camera": [
+        40,
+        0,
+        200,
+        312
+      ],
+      "ms": 90
+    }
+  ]
+}
