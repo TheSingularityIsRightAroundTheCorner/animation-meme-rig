@@ -1,8 +1,9 @@
 # animation-meme-rig
+![NO AFTER EFFECTS](docs/no_after_effects_intro.gif)
 
 **Rig and animate your hand-drawn PNGs with Python. No After Effects.**
 
-▶ Watch the (blockbuster-sized) making-of: [NO AFTER EFFECTS: Why Am I Doing This? (Claude × GPT)](YOUTUBE_LINK_HERE)
+▶ Watch the (blockbuster-sized) making-of: [NO AFTER EFFECTS: Why Am I Doing This? (Claude × GPT)](https://youtu.be/7Ok7jbB9xaE)
 
 An AI-agent skill (works with Claude, GPT, or plain Python) that turns supplied drawings into
 animation memes, moving emoticons and comic cuts — using code instead of keyframes.
@@ -10,8 +11,9 @@ It never draws or redesigns your art: bring your own PNG parts.
 
 ## What it can do
 
+![Mesh warp on a single flattened PNG](docs/mesh_warp_confused.gif)
+- **Mesh warp on a single flattened PNG** – make one layer talk, type, nod, tremble or stretch. No need to cut it into parts.
 - **Parent-child rigs** – head, arms, hands follow their parents; contact changes keep the drawing attached
-- **Mesh acting on flattened PNGs** – talk, type, nod, tremble or stretch a single layer with no separated mouth/hand parts
 - **Comic timing** – hit-stops, anticipation, overshoot, late reactions, beat-synced pose cuts
 - **Punches & effects** – speed lines, layered effects, temporal motion blur
 - **Camera** – finite-camera turns, 2.5D floors, globes, folded-room shots, safe framing for unfinished body edges
@@ -58,4 +60,6 @@ python -m unittest discover -s tests -v   # 132 tests
 
 [MIT](LICENSE) – use it, change it, ship it. Keep the copyright notice.
 
-Made by a webtoon artist, with Claude and GPT doing the typing.
+Made by a webtoon artist, with Claude and GPT doing the typing. → [YouTube](https://www.youtube.com/@The_singularity_is_coming)
+
+
