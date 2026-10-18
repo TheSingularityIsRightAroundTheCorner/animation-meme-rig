@@ -13,6 +13,7 @@ Goal: hand-drawn actors are drawn once and reused across shots (musical numbers,
 | P2 | Sockets, attach state machine, contact QA | Gemini v2's tie tug is reproduced as a pin constraint and compared with its accepted render |
 | P3 | Line-weight compensation | Comparison sheet from scale 0.06 to 0.5 on supplied art |
 | P4 | Multi-view turn rig | 180° look-back: shared-anchor error at the swap below 1 px, tie motion continuous |
+| P4b | 3D pose guide, limb angle swaps, mannequin guide sheets | A sword arc through depth keeps joint anchors within 1 px across swaps; a part drawn over a guide sheet matches its anchors |
 | P5 | Two-bone IK | After arms are drawn as upper arm / forearm / hand |
 
 ## P0. Screen-space rendering
@@ -104,6 +105,24 @@ Raster parts bake their stroke width: screen width = source width × `s`. Harmon
 - Required drawings follow from θ(t): views held on screen for two or more frames need art; views passed faster can be smears.
 - A camera orbit uses `θ_eff = θ_actor − θ_camera`.
 
+## P4b. 3D pose guide and limb foreshortening
+
+Rotating a drawing, rotating a body in space and an animator's deliberate foreshortening are three different things. The guide computes the second, the artist's drawing supplies the third, and rotating the drawing itself only holds for small angles and flat objects (cards, blades, palms). Harmony's multi-angle rigs likewise swap drawings per view instead of rotating one front drawing to every angle.
+
+- The guide is a mannequin: shoulder, elbow and wrist (hip, knee and ankle when needed) as 3D points with the rig's measured lengths, projected with a finite camera. It generalises the existing `turn` homography rather than adding a second projection convention.
+- Per frame it outputs joint screen positions (targets for `align_anchor`), each limb's angle to the camera (which drawing to use), its foreshortening ratio and the parts' depth order.
+- Limb drawings are chosen by angle band, like views: side-on uses the existing part with mesh correction, oblique uses a three-quarter part if one is drawn, and toward the camera uses a dedicated foreshortened part. Every drawing carries the same joint anchors, so a swap does not pop.
+- The direction cue is near/far size asymmetry: the near end grows and the far end shrinks. An orthographic squash (a shorter limb with a visible cross-section) without that asymmetry reads as a flat arm.
+- Artist direction overrides the camera. A near-end scale (for example 1.5 on a punching fist) and a foreshortening factor exaggerate beyond true perspective, and an artist-drawn key pose always wins over the guide.
+- The guide never produces final pixels. Unguided agents asked to mesh-warp a drawing have built 3D models instead; that is out of scope for this skill.
+- NumPy is enough for the mannequin. Blender is optional, for complex camera moves or several interacting characters.
+
+**Mannequin guide sheets.** When a new drawing is requested, render the mannequin at the required angle on the part's canvas size with its anchor dots. The artist draws over the sheet, so the new part inherits its pivot and anchors without remeasuring.
+
+**First experiment (no new engine work).** A 24-frame punch toward the camera with GPT's one-piece right arm: frames 0–5 anticipation (rotate the arm back, twist the body with mesh); 6–7 swap on a motion-blur frame; 8–9 the foreshortened arm drawing, fist scaled from 1 to 1.5 about the shoulder anchor; 10–12 hit-stop while the tie and hair keep moving; 13–23 swap back on a blur frame with overshoot. New art: one arm toward the camera, optionally a separate fist.
+
+The guide pays off when a limb sweeps through depth continuously (a sword arc toward the camera, a slow reach, circling dance arms): drawing choice, joint positions and depth order then come from one source. It requires arms drawn as upper arm / forearm / hand.
+
 ## Drawing preparation for new artwork
 
 1. Export a PSD group per part with `line`, `flat` and `shadow` layers; flats extend under the lines.
@@ -113,6 +132,7 @@ Raster parts bake their stroke width: screen width = source width × `s`. Harmon
 5. Split arms meant for IK into upper arm and forearm, with elbow overlap.
 6. Views in priority order: side, back (one piece is fine), three-quarter.
 7. Record the pen width in source pixels as `w_ref`.
+8. Draw a new angle or foreshortened limb over its mannequin guide sheet.
 
 ## Borrowed from PDoomVideo
 
