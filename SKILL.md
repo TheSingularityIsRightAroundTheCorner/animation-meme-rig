@@ -22,6 +22,7 @@ Use the closest existing primitive and edit JSON data before changing core code.
 - Read [primitives](references/primitives.md) when authoring anchors, camera motion, turns, or effects.
 - Read [migration](references/migration.md) when changing an inherited implementation or choosing between historical variants. Detailed audit evidence and regression coverage ship in `references/audit/`.
 - Read [runtime notes](references/runtime.md) for Claude or another read-only/ephemeral host, explicit output paths, and efficient numeric-first QA. Agent UI metadata is optional; use this same engine on every host.
+- Planned musical/action extensions (depth groups, prop grips, multi-view turns, line-weight compensation) are a design proposal in [the roadmap](references/roadmap-musical-action.md). None of them are scene fields yet; read it only when extending the engine. `scripts/line_weight_probe.py --help` reproduces its line-weight experiment.
 - `examples/force_contact.json`, `knuckle_turn.json`, and `hand_turn_depth.json` preserve the authored attachment/turn sequences. Supply the original PNGs via the CLI asset-directory override. They are measured shot examples, not generic calibrations for new drawings.
 
 ## Preserve these behaviors
