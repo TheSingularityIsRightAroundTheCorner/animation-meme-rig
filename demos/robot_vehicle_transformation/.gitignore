@@ -1,0 +1,11 @@
+.DS_Store
+captures/
+exports/
+media/
+*.zip
+*.mov
+*.webm
+*.mp4
+.env
+.env.*
+__pycache__/

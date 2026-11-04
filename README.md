@@ -1,4 +1,14 @@
 # animation-meme-rig
+## Robots, Vehicles & Transformations
+
+![Robot X-charge, release and low-angle run](docs/robot_vehicle_transformation.gif)
+
+A standalone **robot + vehicle transformation** demo: a jet, ship and bike combine into one robot, with six mechanisms and deterministic motion.
+The GIF shows the robot's charge, release and run; explore the vehicle modes and transformation in the [Fusion Lab source package](demos/robot_vehicle_transformation/README.md).
+Download this repository and open `demos/robot_vehicle_transformation/index.html` in a desktop browser. This demo uses locally bundled Three.js; the hand-drawn animation tools below use Python.
+
+## Hand-drawn animation with Python
+
 ![NO AFTER EFFECTS](docs/no_after_effects_intro.gif)
 
 **Rig and animate your hand-drawn PNGs with Python. No After Effects.**
@@ -58,7 +68,8 @@ python -m unittest discover -s tests -v   # 132 tests
 
 ## License
 
-[MIT](LICENSE) – use it, change it, ship it. Keep the copyright notice.
+The Python rigging tools use [MIT](LICENSE) – use them, change them, ship them. Keep the copyright notice.
+The standalone robot demo has a [separate licensing notice](demos/robot_vehicle_transformation/LICENSE-NOTICE.txt); its bundled Three.js runtime retains its own MIT license.
 
 Made by a webtoon artist, with Claude and GPT doing the typing. → [YouTube](https://www.youtube.com/@The_singularity_is_coming)
 

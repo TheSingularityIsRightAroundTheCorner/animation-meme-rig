@@ -1,0 +1,4 @@
+Project-specific robot design and standalone demo code: all rights reserved.
+No additional license is granted for these materials.
+The repository-root MIT license covers the Python rigging tools, not this demo.
+Third-party runtime: Three.js r149, MIT; see vendor/THREE-LICENSE.txt.

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Robots, Vehicles & Transformations · Fusion Lab</title>
+  <style>
+    :root { color-scheme: dark; --bg:#10141d; --panel:#171d28; --line:#2c3647; --ink:#edf3ff; --muted:#9caac0; --blue:#66b8ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 system-ui,sans-serif; }
+    header { min-height:86px; padding:17px 26px; display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:1px solid var(--line); }
+    h1 { font-size:22px; letter-spacing:.04em; margin:0; }
+    h1 span { font-weight:400; color:var(--muted); font-size:14px; }
+    .eyebrow { color:var(--blue); font-size:10px; font-weight:750; letter-spacing:.18em; }
+    main { display:grid; grid-template-columns:minmax(0,1fr) 330px; height:calc(100dvh - 86px); min-height:640px; }
+    #stage { position:relative; min-width:0; overflow:hidden; background:radial-gradient(ellipse at 45% 40%,#343f53 0%,#1b2332 55%,#101720 100%); }
+    #stage.checker { background-color:#283342; background-image:linear-gradient(45deg,#303d4e 25%,transparent 25%),linear-gradient(-45deg,#303d4e 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#303d4e 75%),linear-gradient(-45deg,transparent 75%,#303d4e 75%); background-size:32px 32px; background-position:0 0,0 16px,16px -16px,-16px 0; }
+    canvas { width:100%; height:100%; display:block; touch-action:none; cursor:grab; }
+    canvas.dragging { cursor:grabbing; }
+    aside { overflow:auto; border-left:1px solid var(--line); padding:22px; background:var(--panel); }
+    section { padding:0 0 22px; margin:0 0 20px; border-bottom:1px solid var(--line); }
+    section:last-child { border-bottom:0; }
+    h2 { margin:0 0 14px; font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); }
+    button { color:var(--ink); background:#242e3e; border:1px solid #3a485e; border-radius:7px; padding:8px 11px; font:inherit; cursor:pointer; }
+    button:hover { background:#33435a; border-color:#7b9ac2; }
+    button:focus-visible, input:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
+    button.primary { background:#1e70be; border-color:#3999ed; font-weight:650; }
+    .toolbar,.buttons { display:flex; gap:7px; flex-wrap:wrap; }
+    .row { display:flex; justify-content:space-between; gap:8px; margin-bottom:7px; align-items:center; }
+    .control { margin-bottom:17px; }
+    output { color:var(--blue); font-variant-numeric:tabular-nums; font-size:12px; }
+    input[type=range] { width:100%; margin:3px 0 0; accent-color:var(--blue); }
+    .hint { color:var(--muted); font-size:12px; margin:8px 0 0; }
+    .camera-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+    .camera-grid button { font-size:12px; padding:7px 3px; }
+    .camera-grid button.active { border-color:var(--blue); color:var(--blue); }
+    .overlay { position:absolute; pointer-events:none; left:24px; top:20px; }
+    #stageLabel { font-size:13px; font-weight:700; letter-spacing:.1em; }
+    #scaleLabel { color:#aebbd0; font-size:12px; margin-top:5px; }
+    .legend { position:absolute; bottom:22px; left:24px; right:20px; display:flex; flex-wrap:wrap; gap:16px; color:#d4dfef; font-size:11px; pointer-events:none; }
+    .legend span::before { content:''; width:7px; height:7px; border-radius:2px; display:inline-block; margin-right:6px; background:var(--dot); }
+    #gaugeStatus { font-size:12px; font-weight:700; color:#ffd646; margin-top:10px; min-height:36px; }
+    #gaugeCells { display:flex; gap:3px; margin-top:10px; }
+    #gaugeCells i { height:14px; flex:1; background:#f3f4f8; border-radius:1px; }
+    #error { display:none; position:absolute; inset:25%; background:#321e27; color:#ffd9df; padding:24px; border:1px solid #c65d70; border-radius:12px; z-index:3; }
+    #source { font-size:11px; color:var(--muted); }
+    a { color:#96cbff; }
+    details { font-size:12px; color:var(--muted); }
+    #diagnostics { white-space:pre-wrap; font:11px/1.6 ui-monospace,monospace; }
+    @media(max-width:850px) { header { padding:14px 16px; flex-wrap:wrap; } h1 { font-size:19px; } main { display:block; height:auto; min-height:0; } #stage { height:65dvh; min-height:380px; } aside { border-left:0; border-top:1px solid var(--line); } .toolbar button { font-size:12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div><div class="eyebrow">THREE-VEHICLE SUPER ROBOT</div><h1>ROBOT / VEHICLE <span>/ Transformation Lab</span></h1></div>
+    <div class="toolbar">
+      <button id="play" class="primary">Play transformation</button>
+      <button id="reset">Reset robot</button>
+      <button id="save">Save transparent PNG</button>
+    </div>
+  </header>
+  <main>
+    <div id="stage">
+      <div class="overlay"><div id="stageLabel">DOCKED</div><div id="scaleLabel">Robot scale</div></div>
+      <div id="error" role="alert"></div>
+      <div class="legend"><span style="--dot:#1686e5">GEMINI / JET</span><span style="--dot:#b8becd">GPT / SHIP</span><span style="--dot:#ee3946">CLAUDE / BIKE</span><span>Drag to orbit · Scroll to zoom</span></div>
+    </div>
+    <aside>
+      <section>
+        <h2>Transformation</h2>
+        <div class="control"><div class="row"><label for="fusion">Fusion</label><output id="fusionValue">100%</output></div><input id="fusion" type="range" min="0" max="1" step="0.001" value="1"></div>
+        <div class="control"><div class="row"><label for="scaling">Scaling</label><output id="scalingValue">100%</output></div><input id="scaling" type="range" min="0" max="1" step="0.001" value="1"></div>
+        <div class="buttons"><button id="vehicles">Separate vehicles</button><button id="float">Float mode</button></div>
+        <p class="hint">Approach 0–30% · Unfold 30–70% · Dock 70–100%</p>
+      </section>
+      <section><h2>Six mechanisms</h2><div id="mechanisms"></div><p class="hint">A fusion change restores the automatic mechanism sequence. Adjust individual mechanisms afterward.</p></section>
+      <section>
+        <h2>Claude session usage</h2>
+        <div class="row"><label for="gauge">Used cells</label><output id="gaugeValue">1 / 10</output></div>
+        <input id="gauge" type="range" min="0" max="10" step="1" value="1">
+        <div id="gaugeCells" aria-hidden="true"></div><div id="gaugeStatus" aria-live="polite">AVAILABLE</div>
+        <div class="buttons"><button id="clawUse">Use claws +1</button><button id="gaugeReset">Session reset</button></div>
+      </section>
+      <section>
+        <h2>Camera</h2>
+        <div class="camera-grid" id="cameras">
+          <button data-camera="overview" class="active">Orbit</button><button data-camera="front">Front</button><button data-camera="side">Side</button>
+          <button data-camera="back">Back</button><button data-camera="head">Head</button><button data-camera="chest">Chest</button>
+          <button data-camera="forearm">Forearm</button><button data-camera="shin">Shin</button><button id="checker">Backdrop</button>
+        </div>
+      </section>
+      <section>
+        <p id="source">Robots, Vehicles & Transformations · Structure and motion prototype<br>Boot U-light reserved for 2D compositing.<br><a href="showcase.html">Open hero camera showcase</a></p>
+        <details><summary>Diagnostics</summary><button id="verify" style="margin-top:10px">Run checks</button><pre id="diagnostics">Ready.</pre></details>
+      </section>
+    </aside>
+  </main>
+  <script src="vendor/three.min.js"></script>
+  <script src="antigravity_king.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    var stage = document.getElementById('stage');
+    var errorBox = document.getElementById('error');
+    function report(error) { errorBox.style.display = 'block'; errorBox.textContent = error.message || String(error); }
+    window.addEventListener('error', function (event) { report(event.error || event.message); });
+    try {
+      if (!window.THREE || !window.AntigravityKing) throw new Error('Local scripts did not load. Keep preview.html, antigravity_king.js and vendor together.');
+      THREE.ColorManagement.legacyMode = false;
+      var robot = AntigravityKing.build();
+      var scene = new THREE.Scene(); scene.add(robot.root);
+      var renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, preserveDrawingBuffer:true });
+      renderer.setClearColor(robot.palette.black, 0);
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+      stage.prepend(renderer.domElement);
+      var camera = new THREE.PerspectiveCamera(38, 1, 0.01, 1500);
+      scene.add(new THREE.AmbientLight(robot.palette.white, 0.35));
+      var keyLight = new THREE.DirectionalLight(robot.palette.white, 0.95);
+      keyLight.position.set(30, 50, 45); scene.add(keyLight);
+      var fillLight = new THREE.DirectionalLight(robot.palette.white, 0.25);
+      fillLight.position.set(-30, 20, -20); scene.add(fillLight);
+      var target = new THREE.Vector3(), box = new THREE.Box3(), size = new THREE.Vector3();
+      var yaw = 0.43, pitch = 0.12, distance = 60, zoomFactor = 1;
+      var selectedCamera = 'overview', dirty = true, animation = null, pointer = null;
+      var mechanismLabels = { shinSlide:'Shin slide / float', cowlFold:'Cowl fold', clawSpinOut:'Claw spin-out', wingHinge:'Wing hinge', faceplateClose:'Faceplate close', chestPlateFlip:'Chest plate flip' };
+      var closeParts = { head:robot.parts.geminiJet.helmetNose, chest:robot.parts.gptShip.chestFrame,
+        forearm:robot.parts.claudeBike.forearmL, shin:robot.parts.gptShip.shinL };
+      AntigravityKing.mechanismNames.forEach(function (name) {
+        var control = document.createElement('div'); control.className = 'control';
+        control.innerHTML = '<div class="row"><label for="' + name + '">' + mechanismLabels[name] + '</label><output id="' + name + 'Value"></output></div><input id="' + name + '" type="range" min="0" max="1" step="0.001">';
+        document.getElementById('mechanisms').appendChild(control);
+        document.getElementById(name).addEventListener('input', function (event) {
+          stop(); robot.setMechanism(name, Number(event.target.value)); sync(); fit(false);
+        });
+      });
+      for (var index = 0; index < 10; index++) document.getElementById('gaugeCells').appendChild(document.createElement('i'));
+      function sync() {
+        var state = robot.getState();
+        ['fusion','scaling'].forEach(function (name) {
+          document.getElementById(name).value = state[name];
+          document.getElementById(name + 'Value').textContent = Math.round(state[name] * 100) + '%';
+        });
+        AntigravityKing.mechanismNames.forEach(function (name) {
+          document.getElementById(name).value = state.mechanisms[name];
+          document.getElementById(name + 'Value').textContent = Math.round(state.mechanisms[name] * 100) + '%';
+        });
+        document.getElementById('gauge').value = state.gauge;
+        document.getElementById('gaugeValue').textContent = state.gauge + ' / 10';
+        var exhausted = state.gauge === 10;
+        document.getElementById('gaugeStatus').textContent = state.gaugeStatus;
+        document.getElementById('gaugeStatus').style.color = state.gauge >= 8 ? robot.palette.claudeRed : robot.palette.gaugeYellow;
+        document.getElementById('clawUse').textContent = exhausted ? 'Limit reached' : 'Use claws +1';
+        document.getElementById('clawUse').disabled = exhausted;
+        Array.from(document.querySelectorAll('#gaugeCells i')).forEach(function (cell, cellIndex) {
+          cell.style.background = cellIndex >= state.gauge ? robot.palette.white : state.gauge < 8 ? robot.palette.gaugeYellow : robot.palette.claudeRed;
+        });
+        document.getElementById('stageLabel').textContent = state.fusion === 1 ? 'DOCKED' : state.fusion < 0.3 ? '01 / APPROACH' : state.fusion < 0.7 ? '02 / UNFOLD' : '03 / DOCK';
+        document.getElementById('scaleLabel').textContent = state.scaling === 0 ? 'Human scale · bike length 2 m' : state.scaling === 1 ? 'Robot scale · approximately 30 m' : 'SCALING · ' + Math.round(state.scaling * 100) + '%';
+        dirty = true;
+      }
+      function fit(resetZoom) {
+        robot.root.updateMatrixWorld(true);
+        box.setFromObject(closeParts[selectedCamera] || robot.root);
+        box.getCenter(target); box.getSize(size);
+        var aspect = Math.max(0.2, camera.aspect);
+        var vertical = Math.max(size.y, size.x / aspect);
+        distance = (vertical / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) + size.z * 0.7) * 1.24;
+        distance = Math.max(distance, 0.8);
+        if (resetZoom) zoomFactor = 1;
+        dirty = true;
+      }
+      function setPreset(name) {
+        if (['overview','front','side','back','head','chest','forearm','shin'].indexOf(name) < 0) throw new Error('Unknown camera');
+        selectedCamera = name;
+        yaw = name === 'side' ? Math.PI / 2 : name === 'back' ? Math.PI : name === 'front' ? 0 : 0.43;
+        pitch = name === 'front' || name === 'back' || name === 'side' ? 0.04 : name === 'overview' && robot.getState().fusion < 0.3 ? 0.65 : 0.12;
+        document.querySelectorAll('[data-camera]').forEach(function (button) { button.classList.toggle('active', button.dataset.camera === name); });
+        fit(true);
+      }
+      function updateCamera() {
+        var radius = distance * zoomFactor;
+        camera.position.set(target.x + Math.sin(yaw) * Math.cos(pitch) * radius,
+          target.y + Math.sin(pitch) * radius, target.z + Math.cos(yaw) * Math.cos(pitch) * radius);
+        camera.lookAt(target); camera.updateMatrixWorld();
+      }
+      function renderNow() {
+        updateCamera(); renderer.render(scene, camera); dirty = false;
+      }
+      function resize() {
+        var width = stage.clientWidth, height = stage.clientHeight;
+        renderer.setSize(width, height); camera.aspect = width / height; camera.updateProjectionMatrix(); fit(false);
+      }
+      function stop() { animation = null; document.getElementById('play').textContent = 'Play transformation'; }
+      function resetRobot() {
+        stop(); robot.setFusion(1).setScaling(1).setGauge(1); setPreset('overview'); sync();
+      }
+      function play() {
+        if (animation) { stop(); return; }
+        robot.setFusion(0).setScaling(0).setGauge(1); setPreset('overview');
+        animation = { start:performance.now(), duration:14000 };
+        document.getElementById('play').textContent = 'Pause'; sync();
+      }
+      document.getElementById('fusion').addEventListener('input', function (event) { stop(); robot.setFusion(Number(event.target.value)); sync(); fit(false); });
+      document.getElementById('scaling').addEventListener('input', function (event) { stop(); robot.setScaling(Number(event.target.value)); sync(); fit(false); });
+      document.getElementById('gauge').addEventListener('input', function (event) { robot.setGauge(Number(event.target.value)); sync(); });
+      document.getElementById('play').onclick = play;
+      document.getElementById('reset').onclick = resetRobot;
+      document.getElementById('vehicles').onclick = function () { stop(); robot.setFusion(0); setPreset('overview'); sync(); };
+      document.getElementById('float').onclick = function () { stop(); robot.setMechanism('shinSlide', robot.getState().mechanisms.shinSlide < 0.5 ? 1 : 0); sync(); fit(false); };
+      document.getElementById('clawUse').onclick = function () {
+        stop(); var state = robot.getState();
+        if (state.gauge >= 10) return;
+        robot.setMechanism('clawSpinOut', 1).setGauge(state.gauge + 1); sync(); fit(false);
+      };
+      document.getElementById('gaugeReset').onclick = function () { robot.setGauge(0); sync(); };
+      document.getElementById('checker').onclick = function () { stage.classList.toggle('checker'); };
+      document.querySelectorAll('[data-camera]').forEach(function (button) { button.onclick = function () { setPreset(button.dataset.camera); }; });
+      document.getElementById('save').onclick = function () {
+        renderNow(); var link = document.createElement('a');
+        link.download = 'antigravity-king-' + selectedCamera + '.png';
+        link.href = renderer.domElement.toDataURL('image/png'); link.click();
+      };
+      renderer.domElement.addEventListener('pointerdown', function (event) {
+        pointer = { x:event.clientX, y:event.clientY, id:event.pointerId };
+        renderer.domElement.setPointerCapture(event.pointerId); renderer.domElement.classList.add('dragging');
+      });
+      renderer.domElement.addEventListener('pointermove', function (event) {
+        if (!pointer || pointer.id !== event.pointerId) return;
+        yaw -= (event.clientX - pointer.x) * 0.006;
+        pitch = Math.max(-1.25, Math.min(1.25, pitch + (event.clientY - pointer.y) * 0.006));
+        pointer.x = event.clientX; pointer.y = event.clientY; dirty = true;
+      });
+      function releasePointer() { pointer = null; renderer.domElement.classList.remove('dragging'); }
+      renderer.domElement.addEventListener('pointerup', releasePointer);
+      renderer.domElement.addEventListener('pointercancel', releasePointer);
+      renderer.domElement.addEventListener('wheel', function (event) {
+        event.preventDefault(); zoomFactor = Math.max(0.25, Math.min(4, zoomFactor * Math.exp(event.deltaY * 0.001))); dirty = true;
+      }, { passive:false });
+      function runChecks() {
+        stop(); var saved = robot.getState(), results = [];
+        function check(condition, message) { if (!condition) throw new Error(message); results.push(message); }
+        function nodes() { var list = []; robot.root.traverse(function (object) { list.push(object); }); return list; }
+        var original = nodes(), ids = original.map(function (object) { return object.uuid; }).join('|');
+        try {
+          check(THREE.REVISION === '149', 'THREE r149');
+          check(renderer.getClearAlpha() === 0, 'Transparent clear alpha');
+          [0,0.2999,0.3,0.5,0.6999,0.7,0.9,1].forEach(function (t) {
+            robot.setFusion(t);
+            check(nodes().map(function (object) { return object.uuid; }).join('|') === ids, 'Persistent parts at fusion ' + t);
+            check(nodes().every(function (object) { return object.visible && object.matrixWorld.elements.every(Number.isFinite); }), 'Finite visible geometry at fusion ' + t);
+          });
+          AntigravityKing.mechanismNames.forEach(function (name) { robot.setMechanism(name, 0); robot.setMechanism(name, 1); check(robot.getState().mechanisms[name] === 1, name + ' independent control'); });
+          robot.setFusion(0).setScaling(0);
+          var bikeSize = new THREE.Box3().setFromObject(robot.parts.claudeBike.root).getSize(new THREE.Vector3());
+          check(Math.abs(bikeSize.z - 2) < 0.001, 'Human-scale bike = 2 m long');
+          robot.setFusion(1).setScaling(1);
+          var robotHeight = new THREE.Box3().setFromObject(robot.root).getSize(new THREE.Vector3()).y;
+          check(robotHeight > 28 && robotHeight < 33, 'Robot height approximately 30 m (' + robotHeight.toFixed(2) + ')');
+          robot.setGauge(10); check(robot.getState().gaugeStatus.indexOf('LIMIT REACHED') === 0, 'All red means exhausted');
+          robot.setGauge(1); check(robot.getState().gaugeStatus === 'AVAILABLE', 'One yellow cell means available');
+          robot.setGauge(0); check(robot.getState().gauge === 0, 'Zero usage supported');
+          check(robot.parts.geminiJet.helmetNose.name === 'geminiJet.helmetNose' && !!robot.parts.claudeBike.clawRotorR, 'Named source-part API');
+          return { passed:true, checks:results.length, results:results, robotHeight:robotHeight, humanBikeLength:bikeSize.z, nodes:original.length };
+        } finally {
+          robot.setFusion(saved.fusion).setScaling(saved.scaling).setGauge(saved.gauge);
+          AntigravityKing.mechanismNames.forEach(function (name) { robot.setMechanism(name, saved.mechanisms[name]); });
+          sync(); fit(false);
+        }
+      }
+      document.getElementById('verify').onclick = function () {
+        try { document.getElementById('diagnostics').textContent = JSON.stringify(runChecks(), null, 2); }
+        catch (error) { document.getElementById('diagnostics').textContent = 'FAIL: ' + error.message; }
+      };
+      window.MechaPreview = { robot:robot, renderer:renderer, scene:scene, camera:camera,
+        setPreset:setPreset, renderNow:renderNow, sync:sync, fit:fit, runChecks:runChecks, stop:stop };
+      new ResizeObserver(resize).observe(stage);
+      function frame(now) {
+        requestAnimationFrame(frame);
+        if (animation) {
+          var elapsed = now - animation.start;
+          if (elapsed < 3000) robot.setScaling(Math.min(1, elapsed / 3000));
+          else robot.setScaling(1).setFusion(Math.min(1, (elapsed - 3000) / 11000));
+          sync(); fit(false);
+          if (elapsed >= animation.duration) stop();
+        }
+        if (dirty) renderNow();
+      }
+      resize(); sync(); requestAnimationFrame(frame);
+    } catch (error) { report(error); console.error(error); }
+  })();
+  </script>
+</body>
+</html>
